@@ -3,199 +3,220 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NoFaceEmpire | O Código Oculto</title>
+
+<title>NoFaceEmpire | Arquitetura Digital</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
 
 <style>
 
 body{
     margin:0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:'Montserrat', sans-serif;
     background:#000;
     color:#fff;
 }
 
 .container{
-    max-width:900px;
+    max-width:1000px;
     margin:auto;
-    padding:0 20px;
+    padding:0 25px;
 }
 
 .hero{
     text-align:center;
-    padding:100px 20px 60px 20px;
-}
-
-.section{
-    padding:60px 0;
+    padding:130px 20px 80px 20px;
 }
 
 h1{
+    font-size:48px;
+    font-weight:800;
     color:#00ff88;
-    font-size:38px;
-    margin-bottom:20px;
+    margin-bottom:25px;
 }
 
 h2{
+    font-size:30px;
+    font-weight:700;
     color:#00ff88;
-    margin-bottom:20px;
+    margin-bottom:25px;
 }
 
 p{
-    color:#ddd;
-    line-height:1.7;
     font-size:18px;
+    line-height:1.8;
+    color:#cfcfcf;
     margin-bottom:18px;
 }
 
-.highlight{
-    color:#00ff88;
-    font-weight:bold;
+.section{
+    padding:90px 0;
+}
+
+.card{
+    border:1px solid rgba(0,255,136,0.4);
+    border-radius:18px;
+    padding:60px 50px;
+    margin:50px 0;
+    background:rgba(0,255,136,0.02);
+    transition:0.4s ease;
+}
+
+.card:hover{
+    box-shadow:0 0 40px rgba(0,255,136,0.25);
+    transform:translateY(-5px);
+}
+
+.divider{
+    height:1px;
+    width:60%;
+    margin:70px auto;
+    background:linear-gradient(to right, transparent, #00ff88, transparent);
 }
 
 .price-box{
-    margin-top:40px;
-    padding:40px;
     border:1px solid #00ff88;
-    border-radius:15px;
+    border-radius:20px;
+    padding:70px 50px;
     text-align:center;
+    box-shadow:0 0 40px rgba(0,255,136,0.2);
 }
 
 .old-price{
     text-decoration:line-through;
     color:#777;
-    font-size:20px;
+    font-size:22px;
 }
 
 .new-price{
-    font-size:38px;
+    font-size:46px;
+    font-weight:800;
     color:#00ff88;
-    font-weight:bold;
-    margin:10px 0;
+    margin:20px 0;
 }
 
 .button{
     display:inline-block;
-    margin-top:25px;
-    padding:18px 40px;
+    margin-top:35px;
+    padding:22px 55px;
     background:#00ff88;
     color:#000;
-    font-weight:bold;
+    font-weight:800;
     text-decoration:none;
-    border-radius:8px;
-    box-shadow:0 0 15px #00ff88;
-    animation:pulse 1.5s infinite;
+    border-radius:10px;
+    box-shadow:0 0 30px #00ff88;
+    transition:0.3s;
 }
 
-@keyframes pulse{
-    0%{box-shadow:0 0 10px #00ff88;}
-    50%{box-shadow:0 0 25px #00ff88;}
-    100%{box-shadow:0 0 10px #00ff88;}
+.button:hover{
+    transform:scale(1.06);
+    box-shadow:0 0 50px #00ff88;
 }
 
 .countdown{
-    margin-top:15px;
-    font-size:18px;
+    margin-top:20px;
+    font-size:20px;
     color:#00ff88;
+    font-weight:600;
 }
 
-.guarantee{
+.subtle{
+    color:#888;
+    font-size:14px;
     margin-top:15px;
-    font-size:15px;
-    color:#aaa;
 }
 
 footer{
     text-align:center;
-    padding:40px;
+    padding:60px;
+    color:#555;
     font-size:14px;
-    color:#666;
+}
+
+.tag{
+    font-size:14px;
+    letter-spacing:2px;
+    color:#00ff88;
+    margin-bottom:20px;
 }
 
 </style>
 </head>
-<body>
 
-<!-- HERO -->
+<body>
 
 <section class="hero">
     <div class="container">
-        <h1>Você não precisa aparecer para ganhar dinheiro na internet.</h1>
+        <div class="tag">ARQUITETURA DIGITAL ESTRATÉGICA</div>
+        <h1>Construir renda no orgânico é uma questão de estrutura.</h1>
         <p>
-            Enquanto a maioria tenta virar influenciador, existe um método silencioso
-            que gera resultado no orgânico todos os dias.
-        </p>
-        <p class="highlight">
-            O jogo nunca foi sobre seguidores.
-        </p>
-        <p>
-            Foi sobre estratégia. Estrutura. Posicionamento.
-            Quem entende isso constrói renda.
-            Quem não entende continua tentando viralizar.
+            Não é sobre seguidores.
+            Não é sobre sorte.
+            É sobre entender o sistema que poucos dominam.
         </p>
     </div>
 </section>
 
-<!-- PRODUTO -->
+<div class="divider"></div>
 
 <section class="section">
-    <div class="container">
-        <h2>O Código Oculto Que Ninguém Te Conta</h2>
+    <div class="container card">
+        <h2>O Código Oculto</h2>
         <p>
-            Um guia estratégico que revela como criar estruturas digitais
-            que vendem sem você precisar mostrar o rosto,
-            gravar stories todos os dias ou depender de sorte.
+            Um guia estruturado que revela como construir
+            ativos digitais que vendem sem exposição.
+        </p>
+        <p>
+            Estratégia aplicada.
+            Posicionamento inteligente.
+            Execução previsível.
         </p>
     </div>
 </section>
-
-<!-- MARCA -->
 
 <section class="section">
-    <div class="container">
-        <h2>O que é a <span class="highlight">NoFaceEmpire</span>?</h2>
+    <div class="container card">
+        <h2>NoFaceEmpire</h2>
         <p>
-            NoFaceEmpire não é apenas uma marca.
-            É um posicionamento.
+            Não é apenas uma marca.
+            É uma arquitetura de posicionamento.
         </p>
         <p>
-            Um movimento para quem quer liberdade financeira sem exposição.
-            Sem depender de validação externa.
-            Apenas estratégia, execução e resultado.
+            Para quem prefere resultado ao invés de validação.
+            Estrutura ao invés de improviso.
         </p>
     </div>
 </section>
-
-<!-- BENEFÍCIOS -->
 
 <section class="section">
-    <div class="container">
-        <h2>O que você vai aprender</h2>
-        <p>✔ Como vender no orgânico sem aparecer</p>
-        <p>✔ Como estruturar páginas que convertem</p>
-        <p>✔ Como criar ofertas estratégicas</p>
-        <p>✔ Como usar posicionamento silencioso</p>
+    <div class="container card">
+        <h2>O que você acessa</h2>
+        <p>✔ Estrutura de vendas no orgânico</p>
+        <p>✔ Construção estratégica de oferta</p>
+        <p>✔ Posicionamento dominante</p>
+        <p>✔ Modelo replicável</p>
     </div>
 </section>
-
-<!-- OFERTA -->
 
 <section class="section">
     <div class="container">
         <div class="price-box">
 
+            <div class="tag">ACESSO LIBERADO POR TEMPO LIMITADO</div>
+
             <p class="old-price">De R$97,00</p>
-            <p class="new-price">Por apenas R$23,97</p>
+            <p class="new-price">R$23,97</p>
 
             <div class="countdown" id="timer">
-                Oferta encerra em: 10:00
+                Encerrando em: 10:00
             </div>
 
             <a href="https://pay.kiwify.com.br/1hpTVDK" class="button">
-                QUERO ACESSAR AGORA
+                ACESSAR ESTRUTURA AGORA
             </a>
 
-            <p class="guarantee">
-                Garantia incondicional de 7 dias. Ou seu dinheiro 100% de volta.
+            <p class="subtle">
+                Garantia de 7 dias. Risco zero.
             </p>
 
         </div>
@@ -203,7 +224,7 @@ footer{
 </section>
 
 <footer>
-© 2026 NoFaceEmpire — Todos os direitos reservados.
+© 2026 NoFaceEmpire — Arquitetura Digital
 </footer>
 
 <script>
@@ -215,7 +236,7 @@ setInterval(() => {
     let minutes = Math.floor(time / 60);
     let seconds = time % 60;
 
-    timer.innerHTML = "Oferta encerra em: " +
+    timer.innerHTML = "Encerrando em: " +
         (minutes < 10 ? "0" : "") + minutes + ":" +
         (seconds < 10 ? "0" : "") + seconds;
 
