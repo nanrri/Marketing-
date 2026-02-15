@@ -1,284 +1,58 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NoFaceEmpire</title>
+<section style="background:#0f0f0f; padding:80px 20px; text-align:center; color:white; font-family:Arial, sans-serif;">
+
+  <h2 style="font-size:28px; margin-bottom:10px;">
+    O Código Oculto Que Ninguém Te Conta
+  </h2>
+
+  <p style="color:#ccc; max-width:600px; margin:0 auto 40px;">
+    Descubra como gerar renda no orgânico sem aparecer, usando apenas estratégia e execução inteligente.
+  </p>
+
+  <div style="border:1px solid #00ff88; padding:40px; max-width:400px; margin:0 auto; border-radius:12px;">
+
+    <p style="text-decoration:line-through; color:#888; font-size:18px;">
+      De R$97,00
+    </p>
+
+    <p style="font-size:36px; color:#00ff88; font-weight:bold; margin:10px 0;">
+      Por apenas R$23,97
+    </p>
+
+    <p style="font-size:14px; color:#ff4d4d; margin-bottom:25px;">
+      ⚠ DESCONTO RELÂMPAGO — Essa condição pode sair do ar a qualquer momento.
+    </p>
+
+    <a href="https://pay.kiwify.com.br/1hpTVDK"
+       style="
+       display:inline-block;
+       padding:15px 30px;
+       background:#00ff88;
+       color:#000;
+       font-weight:bold;
+       text-decoration:none;
+       border-radius:8px;
+       box-shadow:0 0 20px #00ff88;
+       animation:pulse 1.5s infinite;
+       ">
+       QUERO ACESSAR AGORA
+    </a>
+
+    <p style="margin-top:20px; font-size:14px; color:#00ff88;">
+      🔒 Garantia Incondicional de 7 Dias — Ou seu dinheiro 100% de volta.
+    </p>
+
+    <p style="margin-top:10px; font-size:13px; color:#aaa;">
+      ✔ Pagamento seguro • ✔ Acesso imediato • ✔ Suporte incluso
+    </p>
+
+  </div>
+
+</section>
 
 <style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-body{
-    background:#0f0f0f;
-    color:white;
-    overflow-x:hidden;
-}
-
-header{
-    position:fixed;
-    width:100%;
-    top:0;
-    padding:15px;
-    background:rgba(0,0,0,0.8);
-    text-align:center;
-    font-weight:bold;
-    letter-spacing:1px;
-    z-index:1000;
-    border-bottom:1px solid #00ff88;
-}
-
-.hero{
-    height:100vh;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    padding:20px;
-}
-
-.hero h1{
-    font-size:2rem;
-    max-width:700px;
-}
-
-.hero p{
-    margin-top:20px;
-    color:#ccc;
-    max-width:600px;
-}
-
-.cta{
-    margin-top:30px;
-    padding:15px 40px;
-    background:#00ff88;
-    color:black;
-    border:none;
-    font-weight:bold;
-    cursor:pointer;
-    border-radius:6px;
-    transition:0.3s;
-    box-shadow:0 0 20px #00ff88;
-}
-
-.cta:hover{
-    transform:scale(1.05);
-}
-
-.section{
-    padding:80px 20px;
-    text-align:center;
-}
-
-.box-container{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:20px;
-    margin-top:40px;
-}
-
-.box{
-    border:1px solid #00ff88;
-    padding:25px;
-    width:250px;
-    border-radius:8px;
-    transition:0.3s;
-}
-
-.box:hover{
-    background:#00ff8820;
-    transform:translateY(-5px);
-}
-
-.faq{
-    max-width:600px;
-    margin:auto;
-    text-align:left;
-}
-
-.faq-item{
-    margin-bottom:15px;
-    cursor:pointer;
-    border-bottom:1px solid #333;
-    padding:10px 0;
-}
-
-.faq-item p{
-    display:none;
-    color:#ccc;
-    margin-top:5px;
-}
-
-footer{
-    text-align:center;
-    padding:30px;
-    border-top:1px solid #00ff88;
-    font-size:14px;
-}
-
-/* Popup */
-
-.popup{
-    position:fixed;
-    inset:0;
-    background:rgba(0,0,0,0.9);
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    visibility:hidden;
-    opacity:0;
-    transition:0.3s;
-}
-
-.popup.active{
-    visibility:visible;
-    opacity:1;
-}
-
-.popup-content{
-    background:#111;
-    padding:40px;
-    text-align:center;
-    border:1px solid #00ff88;
-    border-radius:10px;
-    width:90%;
-    max-width:400px;
-}
-
-.timer{
-    color:#00ff88;
-    font-size:20px;
-    margin:10px 0;
-}
-
-.discount{
-    margin-top:10px;
-    font-size:14px;
-    color:#ccc;
-}
-
-.notification{
-    position:fixed;
-    top:-100px;
-    right:20px;
-    background:#111;
-    padding:10px 15px;
-    border:1px solid #00ff88;
-    border-radius:5px;
-    font-size:14px;
-    animation:drop 6s linear infinite;
-}
-
-@keyframes drop{
-    0%{top:-100px;}
-    20%{top:20px;}
-    80%{top:20px;}
-    100%{top:-100px;}
-}
-
-@media(max-width:768px){
-    .hero h1{
-        font-size:1.6rem;
-    }
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
 }
 </style>
-</head>
-
-<body>
-
-<header>
-NoFaceEmpire — O império invisível do orgânico.
-</header>
-
-<section class="hero">
-    <h1>Você NÃO precisa aparecer para faturar alto no orgânico.</h1>
-    <p>Descubra o método invisível que transforma perfis comuns em máquinas automáticas de vendas.</p>
-    <button class="cta" onclick="openPopup()">QUERO ENTRAR PARA O IMPÉRIO</button>
-</section>
-
-<section class="section">
-    <h2>O Método</h2>
-    <div class="box-container">
-        <div class="box">Tráfego Invisível</div>
-        <div class="box">Conversão Psicológica</div>
-        <div class="box">Estrutura Automática</div>
-        <div class="box">Escala Orgânica</div>
-    </div>
-</section>
-
-<section class="section">
-    <h2>Perguntas Frequentes</h2>
-    <div class="faq">
-        <div class="faq-item" onclick="toggleFaq(this)">
-            Como funciona?
-            <p>Você aplica o método invisível e começa a estruturar vendas automáticas no orgânico.</p>
-        </div>
-        <div class="faq-item" onclick="toggleFaq(this)">
-            Preciso aparecer?
-            <p>Não. A estrutura foi criada para perfis que não mostram o rosto.</p>
-        </div>
-    </div>
-</section>
-
-<footer>
-© 2026 NoFaceEmpire — Todos os direitos reservados.
-</footer>
-
-<div class="popup" id="popup">
-    <div class="popup-content">
-        <h2>Você quase perdeu…</h2>
-        <p>Última chance de entrar com desconto exclusivo.</p>
-        <div class="timer" id="countdown">05:00</div>
-        <button class="cta">QUERO AGORA</button>
-        <div class="discount">DESCONTO RELÂMPAGO – De R$35,45 por R$9,90</div>
-    </div>
-</div>
-
-<div class="notification" id="notification"></div>
-
-<script>
-function openPopup(){
-    document.getElementById('popup').classList.add('active');
-}
-
-function toggleFaq(element){
-    let p = element.querySelector("p");
-    p.style.display = p.style.display === "block" ? "none" : "block";
-}
-
-/* Timer */
-let time = 300;
-let countdown = document.getElementById("countdown");
-
-setInterval(()=>{
-    let minutes = Math.floor(time/60);
-    let seconds = time%60;
-    countdown.innerHTML =
-        (minutes<10?"0":"")+minutes + ":" +
-        (seconds<10?"0":"")+seconds;
-    if(time>0) time--;
-},1000);
-
-/* Notificações automáticas */
-let names = ["Lucas", "Amanda", "Rafael", "Beatriz", "Gustavo", "Fernanda"];
-let values = ["R$197", "R$297", "R$497"];
-
-function randomNotification(){
-    let name = names[Math.floor(Math.random()*names.length)];
-    let value = values[Math.floor(Math.random()*values.length)];
-    document.getElementById("notification").innerHTML =
-        name + " acabou de entrar com " + value;
-}
-
-setInterval(randomNotification,6000);
-randomNotification();
-</script>
-
-</body>
-</html>
