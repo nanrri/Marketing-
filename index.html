@@ -1,58 +1,212 @@
-<section style="background:#0f0f0f; padding:80px 20px; text-align:center; color:white; font-family:Arial, sans-serif;">
-
-  <h2 style="font-size:28px; margin-bottom:10px;">
-    O Código Oculto Que Ninguém Te Conta
-  </h2>
-
-  <p style="color:#ccc; max-width:600px; margin:0 auto 40px;">
-    Descubra como gerar renda no orgânico sem aparecer, usando apenas estratégia e execução inteligente.
-  </p>
-
-  <div style="border:1px solid #00ff88; padding:40px; max-width:400px; margin:0 auto; border-radius:12px;">
-
-    <p style="text-decoration:line-through; color:#888; font-size:18px;">
-      De R$97,00
-    </p>
-
-    <p style="font-size:36px; color:#00ff88; font-weight:bold; margin:10px 0;">
-      Por apenas R$23,97
-    </p>
-
-    <p style="font-size:14px; color:#ff4d4d; margin-bottom:25px;">
-      ⚠ DESCONTO RELÂMPAGO — Essa condição pode sair do ar a qualquer momento.
-    </p>
-
-    <a href="https://pay.kiwify.com.br/1hpTVDK"
-       style="
-       display:inline-block;
-       padding:15px 30px;
-       background:#00ff88;
-       color:#000;
-       font-weight:bold;
-       text-decoration:none;
-       border-radius:8px;
-       box-shadow:0 0 20px #00ff88;
-       animation:pulse 1.5s infinite;
-       ">
-       QUERO ACESSAR AGORA
-    </a>
-
-    <p style="margin-top:20px; font-size:14px; color:#00ff88;">
-      🔒 Garantia Incondicional de 7 Dias — Ou seu dinheiro 100% de volta.
-    </p>
-
-    <p style="margin-top:10px; font-size:13px; color:#aaa;">
-      ✔ Pagamento seguro • ✔ Acesso imediato • ✔ Suporte incluso
-    </p>
-
-  </div>
-
-</section>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NoFaceEmpire | O Código Oculto</title>
 
 <style>
-@keyframes pulse {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.05); }
-  100% { transform: scale(1); }
+
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background:#000;
+    color:#fff;
+    text-align:center;
 }
+
+section{
+    padding:80px 20px;
+    max-width:900px;
+    margin:auto;
+}
+
+h1, h2{
+    color:#00ff88;
+}
+
+p{
+    color:#ddd;
+    line-height:1.6;
+    font-size:18px;
+}
+
+.neon{
+    color:#00ff88;
+}
+
+.button{
+    display:inline-block;
+    margin-top:30px;
+    padding:18px 40px;
+    background:#00ff88;
+    color:#000;
+    font-weight:bold;
+    text-decoration:none;
+    border-radius:8px;
+    box-shadow:0 0 15px #00ff88;
+    animation:pulse 1.5s infinite;
+}
+
+@keyframes pulse{
+    0%{box-shadow:0 0 10px #00ff88;}
+    50%{box-shadow:0 0 25px #00ff88;}
+    100%{box-shadow:0 0 10px #00ff88;}
+}
+
+.price-box{
+    margin-top:40px;
+    padding:40px;
+    border:1px solid #00ff88;
+    border-radius:15px;
+}
+
+.old-price{
+    text-decoration:line-through;
+    color:#777;
+    font-size:20px;
+}
+
+.new-price{
+    font-size:36px;
+    color:#00ff88;
+    font-weight:bold;
+}
+
+.warning{
+    margin-top:15px;
+    color:#00ff88;
+}
+
+.guarantee{
+    margin-top:15px;
+    font-size:16px;
+    color:#ccc;
+}
+
+.countdown{
+    margin-top:20px;
+    font-size:20px;
+    color:#00ff88;
+    font-weight:bold;
+}
+
+.notification{
+    position:fixed;
+    bottom:20px;
+    left:20px;
+    background:#111;
+    border:1px solid #00ff88;
+    padding:15px;
+    border-radius:8px;
+    font-size:14px;
+    display:none;
+}
+
+footer{
+    padding:40px;
+    font-size:14px;
+    color:#777;
+}
+
 </style>
+</head>
+<body>
+
+<section>
+    <h1>Você não precisa aparecer para ganhar dinheiro na internet.</h1>
+    <p>
+        Enquanto a maioria tenta virar influenciador, existe um método silencioso
+        que gera resultado no orgânico todos os dias.
+    </p>
+</section>
+
+<section>
+    <h2>O jogo nunca foi sobre seguidores.</h2>
+    <p>
+        Foi sobre estratégia. Estrutura. Posicionamento.
+        Quem entende isso constrói renda. Quem não entende continua tentando viralizar.
+    </p>
+</section>
+
+<section>
+    <h2>O Código Oculto Que Ninguém Te Conta</h2>
+    <p>
+        Um guia estratégico que revela como criar estruturas digitais que vendem
+        sem você precisar mostrar o rosto ou depender de sorte.
+    </p>
+</section>
+
+<section>
+    <h2>O que é a <span class="neon">NoFaceEmpire</span>?</h2>
+    <p>
+        Um movimento para quem quer liberdade financeira sem exposição.
+        Apenas estratégia, execução e resultado.
+    </p>
+</section>
+
+<section>
+    <div class="price-box">
+
+        <p class="old-price">De R$97,00</p>
+        <p class="new-price">Por apenas R$23,97</p>
+
+        <div class="countdown" id="timer">
+            Oferta encerra em: 10:00
+        </div>
+
+        <p class="warning">
+            Desconto relâmpago. Essa condição pode sair do ar a qualquer momento.
+        </p>
+
+        <a href="https://pay.kiwify.com.br/1hpTVDK" class="button">
+            QUERO ACESSAR AGORA
+        </a>
+
+        <p class="guarantee">
+            Garantia incondicional de 7 dias ou seu dinheiro 100% de volta.
+        </p>
+
+    </div>
+</section>
+
+<div class="notification" id="notify">
+    João acabou de adquirir o Código Oculto.
+</div>
+
+<footer>
+© 2026 NoFaceEmpire — Todos os direitos reservados.
+</footer>
+
+<script>
+
+// Contador regressivo
+let time = 600;
+const timer = document.getElementById("timer");
+
+setInterval(() => {
+    let minutes = Math.floor(time / 60);
+    let seconds = time % 60;
+    timer.innerHTML = "Oferta encerra em: " + 
+        (minutes < 10 ? "0" : "") + minutes + ":" +
+        (seconds < 10 ? "0" : "") + seconds;
+    if(time > 0) time--;
+}, 1000);
+
+// Notificações simuladas
+const names = ["João","Maria","Lucas","Fernanda","Carlos","Ana"];
+const notify = document.getElementById("notify");
+
+setInterval(() => {
+    let randomName = names[Math.floor(Math.random()*names.length)];
+    notify.innerHTML = randomName + " acabou de adquirir o Código Oculto.";
+    notify.style.display = "block";
+    setTimeout(() => {
+        notify.style.display = "none";
+    }, 4000);
+}, 15000);
+
+</script>
+
+</body>
+  </html>
