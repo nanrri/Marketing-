@@ -3,16 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Arquitetura NoFace</title>
+<title>NOFACE — SISTEMA 01</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
 
 <style>
 
-body{
+*{
     margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
     font-family:'Montserrat', sans-serif;
-    background: radial-gradient(circle at top, #0a0a0a 0%, #000 60%);
+    background:#000;
     color:#fff;
 }
 
@@ -22,77 +27,99 @@ body{
     padding:0 25px;
 }
 
+/* HERO */
+
 .hero{
+    padding:100px 0 60px 0;
     text-align:center;
-    padding:110px 20px 60px 20px;
+}
+
+.selo{
+    display:inline-block;
+    padding:6px 18px;
+    border:1px solid #00ff88;
+    border-radius:50px;
+    font-size:12px;
+    letter-spacing:2px;
+    color:#00ff88;
+    margin-bottom:25px;
 }
 
 h1{
-    font-size:52px;
+    font-size:48px;
     font-weight:800;
-    color:#00ff88;
-    text-shadow:0 0 25px rgba(0,255,136,0.35);
     margin-bottom:20px;
 }
 
-h2{
-    font-size:28px;
-    font-weight:700;
-    color:#00ff88;
-    margin-bottom:20px;
-}
-
-p{
-    font-size:18px;
-    line-height:1.8;
+.subheadline{
+    font-size:20px;
     color:#cfcfcf;
-    margin-bottom:18px;
+    max-width:700px;
+    margin:0 auto 20px auto;
+    line-height:1.6;
 }
 
-.section{
-    padding:70px 0;
+.frase-impacto{
+    font-weight:600;
+    color:#00ff88;
+    font-size:18px;
 }
 
-.card{
-    border:1px solid rgba(0,255,136,0.35);
-    border-radius:18px;
-    padding:50px 40px;
-    margin:40px 0;
-    background:rgba(0,255,136,0.02);
-    transition:0.4s ease;
-}
-
-.card:hover{
-    box-shadow:0 0 35px rgba(0,255,136,0.25);
-    transform:translateY(-4px);
-}
+/* DIVIDER */
 
 .divider{
-    height:1px;
     width:60%;
+    height:1px;
     margin:50px auto;
     background:linear-gradient(to right, transparent, #00ff88, transparent);
 }
 
-.tag{
-    font-size:13px;
-    letter-spacing:2px;
-    color:#00ff88;
+/* SECTION */
+
+.section{
+    padding:60px 0;
+}
+
+.section p{
+    font-size:18px;
+    line-height:1.7;
+    color:#cfcfcf;
     margin-bottom:15px;
 }
+
+.section strong{
+    color:#00ff88;
+}
+
+/* CARD */
+
+.card{
+    border:1px solid rgba(0,255,136,0.3);
+    border-radius:16px;
+    padding:40px;
+    margin-top:40px;
+    background:rgba(0,255,136,0.03);
+    transition:0.3s ease;
+}
+
+.card:hover{
+    box-shadow:0 0 30px rgba(0,255,136,0.2);
+}
+
+/* PRICE */
 
 .price-box{
     border:1px solid #00ff88;
     border-radius:20px;
     padding:60px 40px;
     text-align:center;
-    box-shadow:0 0 40px rgba(0,255,136,0.2);
+    margin-top:40px;
 }
 
 .old-price{
     text-decoration:line-through;
-    color:#777;
-    font-size:20px;
+    color:#666;
+    font-size:18px;
 }
 
 .new-price{
@@ -104,34 +131,33 @@ p{
 
 .button{
     display:inline-block;
-    margin-top:30px;
-    padding:20px 50px;
+    margin-top:25px;
+    padding:18px 45px;
     background:#00ff88;
     color:#000;
     font-weight:800;
     text-decoration:none;
-    border-radius:10px;
-    box-shadow:0 0 30px #00ff88;
+    border-radius:8px;
     transition:0.3s;
 }
 
 .button:hover{
     transform:scale(1.05);
-    box-shadow:0 0 50px #00ff88;
 }
 
 .countdown{
-    margin-top:15px;
-    font-size:18px;
+    margin-top:12px;
+    font-size:16px;
     color:#00ff88;
-    font-weight:600;
 }
+
+/* FOOTER */
 
 footer{
     text-align:center;
-    padding:50px;
+    padding:40px;
+    font-size:13px;
     color:#555;
-    font-size:14px;
 }
 
 </style>
@@ -142,15 +168,15 @@ footer{
 <section class="hero">
     <div class="container">
 
-        <div class="tag">SISTEMA ESTRUTURAL DIGITAL</div>
+        <div class="selo">NOFACE — SISTEMA 01</div>
 
         <h1>Arquitetura NoFace</h1>
 
-        <p style="font-size:20px; max-width:700px; margin:auto;">
+        <p class="subheadline">
             Estrutura estratégica para construção de ativos digitais no orgânico.
         </p>
 
-        <p style="font-weight:600; color:#00ff88;">
+        <p class="frase-impacto">
             Não é sobre seguidores. É sobre arquitetura.
         </p>
 
@@ -161,78 +187,45 @@ footer{
 
 <section class="section">
     <div class="container">
-        <p style="font-size:22px; font-weight:600;">
-            A maioria tenta crescer no orgânico sem estrutura.
-        </p>
-        <p style="color:#00ff88; font-weight:600;">
-            Arquitetura elimina improviso.
-        </p>
-    </div>
-</section>
 
-<section class="section">
-    <div class="container card">
-        <h2>O Código Oculto</h2>
-        <p>
-            Primeiro componente da Arquitetura NoFace.
-            Modelo estruturado para construção de ativos digitais
-            que vendem sem exposição.
-        </p>
-    </div>
-</section>
+        <p>A maioria tenta crescer no orgânico sem estrutura.</p>
+        <p><strong>Estrutura elimina improviso.</strong></p>
 
-<section class="section">
-    <div class="container card">
-        <h2>Estrutura Interna</h2>
-
-        <p><strong>Camada 1 — Fundamento Estratégico</strong><br>
-        Mentalidade estrutural e lógica do modelo orgânico.</p>
-
-        <p><strong>Camada 2 — Arquitetura de Posicionamento</strong><br>
-        Construção digital sem exposição.</p>
-
-        <p><strong>Camada 3 — Engenharia de Oferta</strong><br>
-        Estrutura de vendas aplicada.</p>
-
-        <p><strong>Camada 4 — Ativação Estratégica</strong><br>
-        Implementação prática e execução previsível.</p>
-
-    </div>
-</section>
-
-<section class="section">
-    <div class="container">
-
-        <p style="font-size:20px;">
-            A Arquitetura NoFace não foi construída para consumo casual.
-        </p>
-
-        <p style="color:#00ff88; font-weight:600;">
-            É para quem entende que estrutura precede resultado.
-        </p>
-
-    </div>
-</section>
-
-<section class="section">
-    <div class="container">
-        <div class="price-box">
-
-            <div class="tag">LIBERAÇÃO CONTROLADA</div>
+        <div class="card">
+            <h2 style="margin-bottom:20px;">O Código Oculto</h2>
 
             <p>
-                Cada ciclo opera com capacidade estrutural limitada.
+                Primeiro componente da Arquitetura NoFace.
+                Modelo estruturado para construção de ativos digitais
+                que vendem sem exposição.
             </p>
+        </div>
 
-            <p style="color:#00ff88; font-weight:600;">
-                Encerramento automático ao atingir o limite ou finalizar o tempo.
-            </p>
+        <div class="card">
+            <h2 style="margin-bottom:20px;">Estrutura Interna</h2>
+
+            <p><strong>Camada 1 — Fundamento Estratégico</strong></p>
+            <p>Mentalidade estrutural e lógica do modelo orgânico.</p>
+
+            <p><strong>Camada 2 — Arquitetura de Posicionamento</strong></p>
+            <p>Construção digital sem exposição.</p>
+
+            <p><strong>Camada 3 — Engenharia de Oferta</strong></p>
+            <p>Estrutura de vendas aplicada.</p>
+
+            <p><strong>Camada 4 — Ativação Estratégica</strong></p>
+            <p>Execução prática com previsibilidade.</p>
+        </div>
+
+        <div class="price-box">
+
+            <p style="margin-bottom:10px;">Liberação estrutural limitada.</p>
 
             <p class="old-price">De R$97,00</p>
             <p class="new-price">R$23,97</p>
 
             <div class="countdown" id="timer">
-                Ciclo atual encerra em: 15:00
+                Ciclo encerra em: 15:00
             </div>
 
             <a href="https://pay.kiwify.com.br/1hpTVDK" class="button">
@@ -240,24 +233,24 @@ footer{
             </a>
 
         </div>
+
     </div>
 </section>
 
 <footer>
-© 2026 NoFaceEmpire — Arquitetura NoFace
+© 2026 NoFaceEmpire
 </footer>
 
 <script>
 
-let time = 900; // 15 minutos
-
+let time = 900;
 const timer = document.getElementById("timer");
 
 setInterval(() => {
     let minutes = Math.floor(time / 60);
     let seconds = time % 60;
 
-    timer.innerHTML = "Ciclo atual encerra em: " +
+    timer.innerHTML = "Ciclo encerra em: " +
         (minutes < 10 ? "0" : "") + minutes + ":" +
         (seconds < 10 ? "0" : "") + seconds;
 
