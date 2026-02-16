@@ -3,207 +3,204 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Arquitetura NoFace</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+<title>NoFaceEmpire — Arquitetura NoFace</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
+
 <style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Inter',sans-serif;
+}
 
 body{
-    margin:0;
-    background:#000;
-    font-family:'Inter',sans-serif;
-    color:#fff;
-}
-
-.container{
-    width:90%;
-    max-width:1000px;
-    margin:auto;
-    padding:80px 0;
-    text-align:center;
-}
-
-.top-label{
-    color:#00ff88;
-    letter-spacing:4px;
-    font-size:12px;
-    margin-bottom:30px;
-}
-
-h1{
-    font-size:52px;
-    line-height:1.1;
-    font-weight:800;
-    margin-bottom:20px;
-}
-
-.green{
-    color:#00ff88;
-}
-
-.subtitle{
-    font-size:18px;
-    color:#aaa;
-    max-width:700px;
-    margin:20px auto 60px auto;
-}
-
-.card{
-    background:#061a10;
-    border:1px solid rgba(0,255,136,0.15);
-    border-radius:18px;
-    padding:50px;
-    margin:40px 0;
-    text-align:left;
-}
-
-.card h2{
-    font-size:28px;
-    margin-bottom:20px;
-}
-
-.card p{
-    color:#ccc;
-    line-height:1.7;
+background:#000;
+color:#fff;
+overflow-x:hidden;
 }
 
 .section{
-    margin:100px 0;
+max-width:900px;
+margin:auto;
+padding:120px 20px;
+text-align:center;
 }
 
-.price-box{
-    margin-top:50px;
+.topline{
+color:#00ff88;
+letter-spacing:4px;
+font-size:12px;
+margin-bottom:30px;
+}
+
+h1{
+font-size:42px;
+font-weight:900;
+line-height:1.2;
+}
+
+.highlight{
+color:#00ff88;
+}
+
+.sub{
+color:#aaa;
+margin-top:30px;
+font-size:16px;
+line-height:1.6;
+}
+
+.divider{
+height:1px;
+background:linear-gradient(to right,transparent,#00ff88,transparent);
+margin:60px 0;
+opacity:0.4;
+}
+
+.card{
+background:rgba(0,255,136,0.08);
+border:1px solid rgba(0,255,136,0.2);
+padding:50px 30px;
+border-radius:18px;
+text-align:left;
+}
+
+.card h2{
+color:#00ff88;
+margin-bottom:20px;
+}
+
+.card p{
+color:#ccc;
+line-height:1.7;
+margin-bottom:10px;
+}
+
+.system{
+margin-top:80px;
+}
+
+.system h3{
+font-size:24px;
+margin-bottom:20px;
+}
+
+.price-section{
+margin-top:80px;
+text-align:center;
 }
 
 .old-price{
-    text-decoration:line-through;
-    color:#777;
-    font-size:20px;
+color:#777;
+text-decoration:line-through;
+margin-bottom:10px;
 }
 
 .new-price{
-    font-size:46px;
-    font-weight:800;
-    margin:10px 0;
+font-size:40px;
+font-weight:900;
+margin-bottom:15px;
 }
 
 .timer{
-    margin-top:15px;
-    font-size:14px;
-    color:#00ff88;
-    letter-spacing:2px;
+color:#00ff88;
+font-size:14px;
+letter-spacing:2px;
+margin-bottom:25px;
 }
 
-button{
-    margin-top:35px;
-    padding:18px 40px;
-    font-size:16px;
-    font-weight:700;
-    background:#00ff88;
-    color:#000;
-    border:none;
-    border-radius:50px;
-    cursor:pointer;
-    transition:0.3s;
+.btn{
+background:#00ff88;
+color:#000;
+padding:18px 40px;
+border:none;
+border-radius:40px;
+font-weight:800;
+font-size:16px;
+cursor:pointer;
+transition:0.3s;
 }
 
-button:hover{
-    transform:scale(1.05);
+.btn:hover{
+transform:scale(1.05);
 }
 
 .footer{
-    margin-top:120px;
-    font-size:12px;
-    color:#555;
+margin-top:120px;
+text-align:center;
 }
 
-hr{
-    border:0;
-    height:1px;
-    background:rgba(0,255,136,0.1);
-    margin:80px 0;
+.brand{
+color:#00ff88;
+letter-spacing:6px;
+margin-bottom:20px;
 }
 
+.footer p{
+color:#777;
+font-size:14px;
+line-height:1.6;
+}
+
+@media(max-width:600px){
+h1{
+font-size:32px;
+}
+.new-price{
+font-size:32px;
+}
+}
 </style>
 </head>
+
 <body>
 
-<div class="container">
+<section class="section">
 
-<div class="top-label">ARQUITETURA DIGITAL ESTRATÉGICA</div>
+<div class="topline">ARQUITETURA DIGITAL ESTRATÉGICA</div>
 
 <h1>
-Construir renda no orgânico é uma questão de <span class="green">estrutura.</span>
+Construir renda no orgânico é uma questão de <span class="highlight">estrutura.</span>
 </h1>
 
-<p class="subtitle">
-Não é sobre seguidores. Não é sobre sorte.  
-É sobre entender o sistema que poucos dominam.
+<p class="sub">
+Não é sobre seguidores. Não é sobre sorte. É sobre entender o sistema que poucos dominam.
 </p>
 
-<hr>
+<div class="divider"></div>
 
 <div class="card">
-<h2 class="green">O Código Oculto</h2>
-<p>
-Um guia estruturado que revela como construir ativos digitais que vendem sem exposição.
-<br><br>
-Estratégia aplicada. Posicionamento inteligente. Execução previsível.
-</p>
+<h2>O Código Oculto</h2>
+<p>Um guia estruturado que revela como construir ativos digitais que vendem sem exposição.</p>
+<p>Estratégia aplicada. Posicionamento inteligente. Execução previsível.</p>
 </div>
 
-<div class="section">
-<h2>Sistema NoFace — Estrutura Proprietária</h2>
-<p class="subtitle">
+<div class="system">
+<h3>Sistema NoFace — Estrutura Proprietária</h3>
+<p class="sub">
 Modelo baseado em arquitetura estratégica, engenharia de oferta e posicionamento invisível.
+Sistema restrito liberado por ciclos.
 </p>
 </div>
 
-<div class="section price-box">
-
+<div class="price-section">
 <div class="old-price">De R$97,00</div>
 <div class="new-price">Por R$23,97</div>
-
-<div class="timer" id="timer">
-OFERTA ENCERRA EM 15:00
-</div>
-
-<button onclick="window.location.href='https://pay.kiwify.com.br/1hpTVDK'">
-QUERO ACESSAR AGORA
-</button>
-
+<div class="timer">OFERTA ENCERRA EM 14:55</div>
+<button class="btn">QUERO ACESSAR AGORA</button>
 </div>
 
 <div class="footer">
-NOFACEEMPIRE © Todos os direitos reservados.
+<div class="brand">NOFACEEMPIRE</div>
+<p>
+Infraestrutura digital orientada por engenharia estratégica.
+Arquiteturas proprietárias voltadas à construção de ativos no orgânico.
+Operação estruturada por ciclos com liberação controlada.
+</p>
 </div>
 
-</div>
-
-<script>
-
-let time = 900;
-const timerElement = document.getElementById("timer");
-
-const countdown = setInterval(()=>{
-    let minutes = Math.floor(time/60);
-    let seconds = time%60;
-
-    if(seconds < 10){
-        seconds = "0"+seconds;
-    }
-
-    timerElement.innerHTML = "OFERTA ENCERRA EM " + minutes + ":" + seconds;
-
-    time--;
-
-    if(time < 0){
-        clearInterval(countdown);
-        timerElement.innerHTML = "OFERTA ENCERRADA";
-    }
-
-},1000);
-
-</script>
+</section>
 
 </body>
 </html>
