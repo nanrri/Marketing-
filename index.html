@@ -8,7 +8,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
 
 <style>
-
 *{
     margin:0;
     padding:0;
@@ -19,7 +18,7 @@ body{
     font-family:'Montserrat', sans-serif;
     background:#000;
     color:#fff;
-    background-image: radial-gradient(circle at center, rgba(0,230,118,0.06) 0%, transparent 60%);
+    background-image: radial-gradient(circle at center, rgba(0,230,118,0.07) 0%, transparent 70%);
 }
 
 .container{
@@ -32,139 +31,86 @@ body{
 
 .hero{
     text-align:center;
-    padding:100px 0 60px 0;
+    padding:120px 0 80px 0;
 }
 
-.selo{
-    font-size:12px;
-    letter-spacing:3px;
+.mini-title{
+    font-size:13px;
+    letter-spacing:5px;
     color:#00e676;
-    margin-bottom:20px;
-    border:1px solid #00e676;
-    display:inline-block;
-    padding:6px 18px;
-    border-radius:40px;
+    margin-bottom:25px;
 }
 
 h1{
-    font-size:52px;
+    font-size:56px;
     font-weight:800;
-    margin-bottom:20px;
-    text-shadow:0 0 25px rgba(0,230,118,0.25);
+    color:#00e676;
+    line-height:1.2;
+    text-shadow:0 0 30px rgba(0,230,118,0.25);
 }
 
 .subheadline{
+    margin-top:30px;
     font-size:19px;
-    color:#bfbfbf;
-    max-width:650px;
-    margin:0 auto 18px auto;
+    color:#cfcfcf;
+    max-width:700px;
+    margin-left:auto;
+    margin-right:auto;
     line-height:1.6;
-}
-
-.frase-impacto{
-    font-size:17px;
-    color:#00e676;
-    font-weight:600;
 }
 
 .divider{
     width:60%;
     height:1px;
-    margin:50px auto;
+    margin:70px auto;
     background:linear-gradient(to right, transparent, #00e676, transparent);
 }
 
-/* SECTIONS */
+/* PRODUCT CARD */
 
-.section{
-    padding:50px 0;
-    text-align:center;
+.card{
+    max-width:800px;
+    margin:0 auto 80px auto;
+    padding:60px 50px;
+    border-radius:20px;
+    background:rgba(0,20,10,0.6);
+    border:1px solid rgba(0,230,118,0.25);
+    box-shadow:0 0 60px rgba(0,230,118,0.07);
 }
 
-.section p{
-    font-size:17px;
-    color:#cfcfcf;
-    line-height:1.7;
-    margin-bottom:12px;
-}
-
-.section strong{
+.card h2{
+    font-size:32px;
     color:#00e676;
+    margin-bottom:25px;
 }
 
-/* ENGINEERING BLOCK */
-
-.block{
-    border-top:1px solid rgba(0,230,118,0.15);
-    border-bottom:1px solid rgba(0,230,118,0.15);
-    padding:40px 0;
-    margin-top:30px;
+.card p{
+    font-size:18px;
+    color:#d6d6d6;
+    line-height:1.7;
+    margin-bottom:18px;
 }
 
 /* INSTITUTIONAL */
 
-.institutional-title{
+.institutional{
+    text-align:center;
+    padding:60px 0 100px 0;
+}
+
+.institutional h3{
     font-size:14px;
     letter-spacing:8px;
     color:#00e676;
     margin-bottom:20px;
 }
 
-.institutional-text{
+.institutional p{
     max-width:700px;
     margin:auto;
     color:#bfbfbf;
     line-height:1.7;
-}
-
-/* OFFER */
-
-.offer{
-    margin-top:60px;
-    padding:50px 30px;
-    border:1px solid #00e676;
-    border-radius:20px;
-}
-
-.old-price{
-    text-decoration:line-through;
-    color:#666;
-    font-size:18px;
-}
-
-.new-price{
-    font-size:46px;
-    font-weight:800;
-    color:#00e676;
-    margin:15px 0;
-}
-
-.timer{
-    margin-top:15px;
-    font-size:15px;
-    color:#00e676;
-}
-
-.button{
-    display:inline-block;
-    margin-top:25px;
-    padding:18px 50px;
-    background:#00e676;
-    color:#000;
-    font-weight:800;
-    text-decoration:none;
-    border-radius:8px;
-    transition:0.3s;
-}
-
-.button:hover{
-    transform:scale(1.05);
-}
-
-.footer-note{
-    margin-top:18px;
-    font-size:14px;
-    color:#888;
+    font-size:16px;
 }
 
 footer{
@@ -182,16 +128,15 @@ footer{
 <section class="hero">
     <div class="container">
 
-        <div class="selo">NOFACE — SISTEMA 01</div>
+        <div class="mini-title">ARQUITETURA DIGITAL ESTRATÉGICA</div>
 
-        <h1>Arquitetura NoFace</h1>
+        <h1>
+            Construir renda no orgânico é uma questão de estrutura.
+        </h1>
 
         <p class="subheadline">
-            Engenharia digital para construção de ativos no orgânico.
-        </p>
-
-        <p class="frase-impacto">
-            Estrutura precede resultado.
+            Não é sobre seguidores. Não é sobre sorte.
+            É sobre entender o sistema que poucos dominam.
         </p>
 
     </div>
@@ -199,61 +144,34 @@ footer{
 
 <div class="divider"></div>
 
-<section class="section">
-    <div class="container">
+<section>
+    <div class="card">
 
-        <p>Improviso gera instabilidade.</p>
-        <p><strong>Arquitetura gera previsibilidade.</strong></p>
+        <h2>O Código Oculto</h2>
 
-        <div class="block">
-            <p><strong>Fundamento Estratégico</strong></p>
-            <p><strong>Arquitetura de Posicionamento</strong></p>
-            <p><strong>Engenharia de Oferta</strong></p>
-            <p><strong>Ativação Estrutural</strong></p>
-        </div>
+        <p>
+            Um guia estruturado que revela como construir ativos digitais
+            que vendem sem exposição.
+        </p>
+
+        <p>
+            Estratégia aplicada. Posicionamento inteligente.
+            Execução previsível.
+        </p>
 
     </div>
 </section>
 
-<section class="section">
+<section class="institutional">
     <div class="container">
 
-        <div class="institutional-title">NOFACEEMPIRE</div>
+        <h3>NOFACEEMPIRE</h3>
 
-        <div class="institutional-text">
+        <p>
             Infraestrutura digital orientada por engenharia estratégica.
             Arquiteturas proprietárias voltadas à construção de ativos no orgânico.
             Operação estruturada por ciclos com liberação controlada.
-        </div>
-
-    </div>
-</section>
-
-<section class="section">
-    <div class="container">
-
-        <div class="offer">
-
-            <p>Liberação estrutural ativa.</p>
-            <p>Encerramento por tempo ou capacidade operacional.</p>
-            <p>Capacidade atual: 27 acessos.</p>
-
-            <p class="old-price">De R$97,00</p>
-            <p class="new-price">R$23,97</p>
-
-            <div class="timer" id="timer">
-                Ciclo encerra em: 15:00
-            </div>
-
-            <a href="https://pay.kiwify.com.br/1hpTVDK" class="button">
-                LIBERAR ACESSO
-            </a>
-
-            <div class="footer-note">
-                A engenharia permanece ativa até o encerramento do ciclo.
-            </div>
-
-        </div>
+        </p>
 
     </div>
 </section>
@@ -261,24 +179,6 @@ footer{
 <footer>
 © 2026 NOFACEEMPIRE
 </footer>
-
-<script>
-let time = 900;
-const timer = document.getElementById("timer");
-
-setInterval(() => {
-    let minutes = Math.floor(time / 60);
-    let seconds = time % 60;
-
-    timer.innerHTML = "Ciclo encerra em: " +
-        (minutes < 10 ? "0" : "") + minutes + ":" +
-        (seconds < 10 ? "0" : "") + seconds;
-
-    if(time > 0){
-        time--;
-    }
-}, 1000);
-</script>
 
 </body>
 </html>
