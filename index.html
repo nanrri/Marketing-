@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NOFACE — SISTEMA 01</title>
+<title>Arquitetura NoFace</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
 
@@ -19,10 +19,11 @@ body{
     font-family:'Montserrat', sans-serif;
     background:#000;
     color:#fff;
+    background-image: radial-gradient(circle at center, rgba(0,230,118,0.06) 0%, transparent 60%);
 }
 
 .container{
-    max-width:1000px;
+    max-width:900px;
     margin:auto;
     padding:0 25px;
 }
@@ -30,90 +31,99 @@ body{
 /* HERO */
 
 .hero{
-    padding:100px 0 60px 0;
     text-align:center;
+    padding:100px 0 60px 0;
 }
 
 .selo{
+    font-size:12px;
+    letter-spacing:3px;
+    color:#00e676;
+    margin-bottom:20px;
+    border:1px solid #00e676;
     display:inline-block;
     padding:6px 18px;
-    border:1px solid #00ff88;
-    border-radius:50px;
-    font-size:12px;
-    letter-spacing:2px;
-    color:#00ff88;
-    margin-bottom:25px;
+    border-radius:40px;
 }
 
 h1{
-    font-size:48px;
+    font-size:52px;
     font-weight:800;
     margin-bottom:20px;
+    text-shadow:0 0 25px rgba(0,230,118,0.25);
 }
 
 .subheadline{
-    font-size:20px;
-    color:#cfcfcf;
-    max-width:700px;
-    margin:0 auto 20px auto;
+    font-size:19px;
+    color:#bfbfbf;
+    max-width:650px;
+    margin:0 auto 18px auto;
     line-height:1.6;
 }
 
 .frase-impacto{
+    font-size:17px;
+    color:#00e676;
     font-weight:600;
-    color:#00ff88;
-    font-size:18px;
 }
-
-/* DIVIDER */
 
 .divider{
     width:60%;
     height:1px;
     margin:50px auto;
-    background:linear-gradient(to right, transparent, #00ff88, transparent);
+    background:linear-gradient(to right, transparent, #00e676, transparent);
 }
 
-/* SECTION */
+/* SECTIONS */
 
 .section{
-    padding:60px 0;
+    padding:50px 0;
+    text-align:center;
 }
 
 .section p{
-    font-size:18px;
-    line-height:1.7;
+    font-size:17px;
     color:#cfcfcf;
-    margin-bottom:15px;
+    line-height:1.7;
+    margin-bottom:12px;
 }
 
 .section strong{
-    color:#00ff88;
+    color:#00e676;
 }
 
-/* CARD */
+/* ENGINEERING BLOCK */
 
-.card{
-    border:1px solid rgba(0,255,136,0.3);
-    border-radius:16px;
-    padding:40px;
-    margin-top:40px;
-    background:rgba(0,255,136,0.03);
-    transition:0.3s ease;
+.block{
+    border-top:1px solid rgba(0,230,118,0.15);
+    border-bottom:1px solid rgba(0,230,118,0.15);
+    padding:40px 0;
+    margin-top:30px;
 }
 
-.card:hover{
-    box-shadow:0 0 30px rgba(0,255,136,0.2);
+/* INSTITUTIONAL */
+
+.institutional-title{
+    font-size:14px;
+    letter-spacing:8px;
+    color:#00e676;
+    margin-bottom:20px;
 }
 
-/* PRICE */
+.institutional-text{
+    max-width:700px;
+    margin:auto;
+    color:#bfbfbf;
+    line-height:1.7;
+}
 
-.price-box{
-    border:1px solid #00ff88;
+/* OFFER */
+
+.offer{
+    margin-top:60px;
+    padding:50px 30px;
+    border:1px solid #00e676;
     border-radius:20px;
-    padding:60px 40px;
-    text-align:center;
-    margin-top:40px;
 }
 
 .old-price{
@@ -123,17 +133,23 @@ h1{
 }
 
 .new-price{
-    font-size:44px;
+    font-size:46px;
     font-weight:800;
-    color:#00ff88;
+    color:#00e676;
     margin:15px 0;
+}
+
+.timer{
+    margin-top:15px;
+    font-size:15px;
+    color:#00e676;
 }
 
 .button{
     display:inline-block;
     margin-top:25px;
-    padding:18px 45px;
-    background:#00ff88;
+    padding:18px 50px;
+    background:#00e676;
     color:#000;
     font-weight:800;
     text-decoration:none;
@@ -145,13 +161,11 @@ h1{
     transform:scale(1.05);
 }
 
-.countdown{
-    margin-top:12px;
-    font-size:16px;
-    color:#00ff88;
+.footer-note{
+    margin-top:18px;
+    font-size:14px;
+    color:#888;
 }
-
-/* FOOTER */
 
 footer{
     text-align:center;
@@ -173,11 +187,11 @@ footer{
         <h1>Arquitetura NoFace</h1>
 
         <p class="subheadline">
-            Estrutura estratégica para construção de ativos digitais no orgânico.
+            Engenharia digital para construção de ativos no orgânico.
         </p>
 
         <p class="frase-impacto">
-            Não é sobre seguidores. É sobre arquitetura.
+            Estrutura precede resultado.
         </p>
 
     </div>
@@ -188,43 +202,46 @@ footer{
 <section class="section">
     <div class="container">
 
-        <p>A maioria tenta crescer no orgânico sem estrutura.</p>
-        <p><strong>Estrutura elimina improviso.</strong></p>
+        <p>Improviso gera instabilidade.</p>
+        <p><strong>Arquitetura gera previsibilidade.</strong></p>
 
-        <div class="card">
-            <h2 style="margin-bottom:20px;">O Código Oculto</h2>
-
-            <p>
-                Primeiro componente da Arquitetura NoFace.
-                Modelo estruturado para construção de ativos digitais
-                que vendem sem exposição.
-            </p>
+        <div class="block">
+            <p><strong>Fundamento Estratégico</strong></p>
+            <p><strong>Arquitetura de Posicionamento</strong></p>
+            <p><strong>Engenharia de Oferta</strong></p>
+            <p><strong>Ativação Estrutural</strong></p>
         </div>
 
-        <div class="card">
-            <h2 style="margin-bottom:20px;">Estrutura Interna</h2>
+    </div>
+</section>
 
-            <p><strong>Camada 1 — Fundamento Estratégico</strong></p>
-            <p>Mentalidade estrutural e lógica do modelo orgânico.</p>
+<section class="section">
+    <div class="container">
 
-            <p><strong>Camada 2 — Arquitetura de Posicionamento</strong></p>
-            <p>Construção digital sem exposição.</p>
+        <div class="institutional-title">NOFACEEMPIRE</div>
 
-            <p><strong>Camada 3 — Engenharia de Oferta</strong></p>
-            <p>Estrutura de vendas aplicada.</p>
-
-            <p><strong>Camada 4 — Ativação Estratégica</strong></p>
-            <p>Execução prática com previsibilidade.</p>
+        <div class="institutional-text">
+            Infraestrutura digital orientada por engenharia estratégica.
+            Arquiteturas proprietárias voltadas à construção de ativos no orgânico.
+            Operação estruturada por ciclos com liberação controlada.
         </div>
 
-        <div class="price-box">
+    </div>
+</section>
 
-            <p style="margin-bottom:10px;">Liberação estrutural limitada.</p>
+<section class="section">
+    <div class="container">
+
+        <div class="offer">
+
+            <p>Liberação estrutural ativa.</p>
+            <p>Encerramento por tempo ou capacidade operacional.</p>
+            <p>Capacidade atual: 27 acessos.</p>
 
             <p class="old-price">De R$97,00</p>
             <p class="new-price">R$23,97</p>
 
-            <div class="countdown" id="timer">
+            <div class="timer" id="timer">
                 Ciclo encerra em: 15:00
             </div>
 
@@ -232,17 +249,20 @@ footer{
                 LIBERAR ACESSO
             </a>
 
+            <div class="footer-note">
+                A engenharia permanece ativa até o encerramento do ciclo.
+            </div>
+
         </div>
 
     </div>
 </section>
 
 <footer>
-© 2026 NoFaceEmpire
+© 2026 NOFACEEMPIRE
 </footer>
 
 <script>
-
 let time = 900;
 const timer = document.getElementById("timer");
 
@@ -258,7 +278,6 @@ setInterval(() => {
         time--;
     }
 }, 1000);
-
 </script>
 
 </body>
