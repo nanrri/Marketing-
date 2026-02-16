@@ -1,206 +1,225 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NoFaceEmpire — Arquitetura NoFace</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
+<title>Arquitetura NoFace</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 
 <style>
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Inter',sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Inter',sans-serif;
 }
 
 body{
-background:#000;
-color:#fff;
-overflow-x:hidden;
+    background:#050505;
+    color:#eaeaea;
+    text-align:center;
 }
 
 .section{
-max-width:900px;
-margin:auto;
-padding:120px 20px;
-text-align:center;
+    padding:80px 20px;
+    max-width:900px;
+    margin:auto;
 }
 
-.topline{
-color:#00ff88;
-letter-spacing:4px;
-font-size:12px;
-margin-bottom:30px;
+.top-label{
+    color:#00ff9c;
+    letter-spacing:4px;
+    font-size:12px;
+    margin-bottom:20px;
 }
 
 h1{
-font-size:42px;
-font-weight:900;
-line-height:1.2;
+    font-size:38px;
+    font-weight:800;
+    line-height:1.2;
 }
 
 .highlight{
-color:#00ff88;
+    color:#00ff9c;
 }
 
 .sub{
-color:#aaa;
-margin-top:30px;
-font-size:16px;
-line-height:1.6;
+    margin-top:20px;
+    color:#9a9a9a;
+    font-weight:300;
+    font-size:16px;
 }
 
 .divider{
-height:1px;
-background:linear-gradient(to right,transparent,#00ff88,transparent);
-margin:60px 0;
-opacity:0.4;
+    height:1px;
+    background:linear-gradient(to right, transparent, #00ff9c, transparent);
+    margin:60px 0;
 }
 
 .card{
-background:rgba(0,255,136,0.08);
-border:1px solid rgba(0,255,136,0.2);
-padding:50px 30px;
-border-radius:18px;
-text-align:left;
+    background:#0b0f0d;
+    border:1px solid rgba(0,255,156,0.2);
+    border-radius:18px;
+    padding:40px;
+    text-align:left;
 }
 
 .card h2{
-color:#00ff88;
-margin-bottom:20px;
+    color:#00ff9c;
+    margin-bottom:15px;
 }
 
-.card p{
-color:#ccc;
-line-height:1.7;
-margin-bottom:10px;
+.structure-list{
+    margin-top:40px;
+    font-weight:600;
+    line-height:2.2;
 }
 
-.system{
-margin-top:80px;
-}
-
-.system h3{
-font-size:24px;
-margin-bottom:20px;
-}
-
-.price-section{
-margin-top:80px;
-text-align:center;
+.offer-title{
+    font-size:22px;
+    font-weight:600;
+    margin-bottom:15px;
 }
 
 .old-price{
-color:#777;
-text-decoration:line-through;
-margin-bottom:10px;
+    text-decoration:line-through;
+    color:#666;
+    margin-bottom:5px;
 }
 
-.new-price{
-font-size:40px;
-font-weight:900;
-margin-bottom:15px;
+.price{
+    font-size:42px;
+    font-weight:800;
+    margin-bottom:15px;
 }
 
 .timer{
-color:#00ff88;
-font-size:14px;
-letter-spacing:2px;
-margin-bottom:25px;
+    font-size:14px;
+    letter-spacing:2px;
+    color:#00ff9c;
+    margin-bottom:25px;
 }
 
 .btn{
-background:#00ff88;
-color:#000;
-padding:18px 40px;
-border:none;
-border-radius:40px;
-font-weight:800;
-font-size:16px;
-cursor:pointer;
-transition:0.3s;
+    background:#00ff9c;
+    color:#000;
+    padding:18px 40px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:700;
+    display:inline-block;
+    transition:0.3s;
 }
 
 .btn:hover{
-transform:scale(1.05);
+    background:#00d884;
 }
 
 .footer{
-margin-top:120px;
-text-align:center;
+    margin-top:60px;
+    font-size:12px;
+    letter-spacing:6px;
+    color:#00ff9c;
 }
 
-.brand{
-color:#00ff88;
-letter-spacing:6px;
-margin-bottom:20px;
-}
-
-.footer p{
-color:#777;
-font-size:14px;
-line-height:1.6;
-}
-
-@media(max-width:600px){
-h1{
-font-size:32px;
-}
-.new-price{
-font-size:32px;
-}
+.footer-text{
+    margin-top:20px;
+    color:#8a8a8a;
+    font-size:13px;
+    line-height:1.6;
 }
 </style>
 </head>
 
 <body>
 
-<section class="section">
+<div class="section">
 
-<div class="topline">ARQUITETURA DIGITAL ESTRATÉGICA</div>
+<div class="top-label">ARQUITETURA DIGITAL ESTRATÉGICA</div>
 
 <h1>
 Construir renda no orgânico é uma questão de <span class="highlight">estrutura.</span>
 </h1>
 
-<p class="sub">
-Não é sobre seguidores. Não é sobre sorte. É sobre entender o sistema que poucos dominam.
-</p>
+<div class="sub">
+Não é sobre seguidores. Não é sobre sorte. É sobre engenharia.
+</div>
 
 <div class="divider"></div>
 
 <div class="card">
 <h2>O Código Oculto</h2>
-<p>Um guia estruturado que revela como construir ativos digitais que vendem sem exposição.</p>
-<p>Estratégia aplicada. Posicionamento inteligente. Execução previsível.</p>
-</div>
-
-<div class="system">
-<h3>Sistema NoFace — Estrutura Proprietária</h3>
-<p class="sub">
-Modelo baseado em arquitetura estratégica, engenharia de oferta e posicionamento invisível.
-Sistema restrito liberado por ciclos.
+<p>
+Guia estruturado para construção de ativos digitais no orgânico.<br><br>
+Execução previsível. Posicionamento invisível.
 </p>
 </div>
 
-<div class="price-section">
-<div class="old-price">De R$97,00</div>
-<div class="new-price">Por R$23,97</div>
-<div class="timer">OFERTA ENCERRA EM 14:55</div>
-<button class="btn">QUERO ACESSAR AGORA</button>
+<div class="structure-list">
+Fundamento Estratégico<br>
+Arquitetura de Posicionamento<br>
+Engenharia de Oferta<br>
+Ativação Estrutural
 </div>
+
+<div class="divider"></div>
+
+<div class="offer-title">
+Sistema NoFace — Estrutura Proprietária
+</div>
+
+<div class="sub">
+Sistema restrito. Liberação por ciclos.
+</div>
+
+<br>
+
+<div class="old-price">De R$97,00</div>
+<div class="price">Por R$23,97</div>
+
+<div class="timer" id="countdown">
+OFERTA ENCERRA EM 15:00
+</div>
+
+<a href="https://pay.kiwify.com.br/1hpTVDK" class="btn">
+ACESSAR SISTEMA
+</a>
 
 <div class="footer">
-<div class="brand">NOFACEEMPIRE</div>
-<p>
-Infraestrutura digital orientada por engenharia estratégica.
-Arquiteturas proprietárias voltadas à construção de ativos no orgânico.
-Operação estruturada por ciclos com liberação controlada.
-</p>
+NOFACEEMPIRE
 </div>
 
-</section>
+<div class="footer-text">
+Infraestrutura digital baseada em engenharia estratégica.
+Operação orientada por arquitetura proprietária.
+</div>
+
+</div>
+
+<script>
+let duration = 15 * 60;
+let display = document.getElementById('countdown');
+
+function startTimer() {
+    let timer = duration, minutes, seconds;
+    setInterval(function () {
+        minutes = parseInt(timer / 60, 10);
+        seconds = parseInt(timer % 60, 10);
+
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        display.textContent = "OFERTA ENCERRA EM " + minutes + ":" + seconds;
+
+        if (--timer < 0) {
+            timer = 0;
+        }
+    }, 1000);
+}
+
+startTimer();
+</script>
 
 </body>
 </html>
