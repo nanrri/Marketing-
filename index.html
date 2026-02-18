@@ -3,101 +3,135 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>O Segredo</title>
+<title>O Segredo | NoFace</title>
 
 <style>
 body{
     margin:0;
-    font-family:Arial, sans-serif;
-    background:#000;
-    color:#fff;
-    text-align:center;
+    background:#0a0a0f;
+    color:#eaeaea;
+    font-family: 'Segoe UI', sans-serif;
     overflow-x:hidden;
 }
 
+/* TOPO TECNOLÓGICO */
 .top-bar{
-    font-size:12px;
-    letter-spacing:2px;
-    padding:10px;
-    color:#00ff88;
-    opacity:0.7;
+    padding:20px 40px;
+    font-size:13px;
+    letter-spacing:3px;
+    color:#00ffcc;
+    position:relative;
 }
 
+.top-bar::after{
+    content:"";
+    position:absolute;
+    bottom:10px;
+    left:40px;
+    width:180px;
+    height:1px;
+    background:linear-gradient(to right,#00ffcc,transparent);
+}
+
+/* CONTAINER */
 .container{
-    max-width:900px;
+    max-width:1000px;
     margin:auto;
-    padding:40px 20px;
+    padding:60px 20px;
 }
 
+/* TITULO */
 h1{
-    font-size:42px;
+    font-size:52px;
     margin-bottom:10px;
+    font-weight:600;
 }
 
-.sub{
+.subtitle{
     font-size:18px;
-    opacity:0.8;
-    margin-bottom:40px;
+    opacity:0.6;
+    margin-bottom:80px;
 }
 
-.box{
-    border:1px solid rgba(0,255,136,0.3);
-    border-radius:14px;
-    padding:25px;
-    margin:20px 0;
-    box-shadow:0 0 15px rgba(0,255,136,0.1);
-}
-
-.price-old{
-    text-decoration:line-through;
-    opacity:0.5;
-    font-size:20px;
-}
-
-.price-new{
-    font-size:48px;
-    font-weight:bold;
-    color:#00ff88;
-    animation:breathing 2.5s infinite ease-in-out;
-}
-
-@keyframes breathing{
-    0%{transform:scale(1);}
-    50%{transform:scale(1.05);}
-    100%{transform:scale(1);}
-}
-
-.timer{
-    font-size:22px;
-    margin-top:10px;
-    color:#00ff88;
-}
-
-.warning{
-    font-size:14px;
-    opacity:0.7;
-    margin-bottom:20px;
-}
-
-button{
-    background:#00ff88;
-    border:none;
-    padding:18px 40px;
-    font-size:20px;
-    font-weight:bold;
-    border-radius:10px;
-    cursor:pointer;
+/* BLOCOS TECNOLOGICOS */
+.tech-block{
+    width:75%;
+    margin-bottom:60px;
+    padding:30px;
+    border-left:2px solid #00ffcc;
+    background:linear-gradient(145deg,#0f0f18,#0b0b12);
+    border-radius:0 12px 12px 0;
+    box-shadow:0 0 40px rgba(0,255,204,0.05);
     transition:0.3s;
 }
 
-button:hover{
-    transform:scale(1.05);
+.tech-block:hover{
+    transform:translateX(5px);
 }
 
-.discount{
-    margin-top:10px;
+.tech-block h3{
+    margin-bottom:10px;
+    color:#00ffcc;
+    font-weight:500;
+}
+
+.tech-block p{
+    opacity:0.7;
+    font-size:15px;
+}
+
+/* CTA */
+.cta{
+    margin-top:80px;
+    text-align:center;
+}
+
+.cta button{
+    background:transparent;
+    border:1.5px solid #00ffcc;
+    color:#00ffcc;
+    padding:18px 60px;
+    font-size:18px;
+    letter-spacing:2px;
+    cursor:pointer;
+    transition:0.4s;
+    animation:breath 2.5s infinite ease-in-out;
+}
+
+@keyframes breath{
+    0%{box-shadow:0 0 10px rgba(0,255,204,0.2);}
+    50%{box-shadow:0 0 25px rgba(0,255,204,0.5);}
+    100%{box-shadow:0 0 10px rgba(0,255,204,0.2);}
+}
+
+.cta button:hover{
+    background:#00ffcc;
+    color:#000;
+}
+
+/* WHATSAPP */
+.whatsapp{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#00ffcc;
+    color:#000;
+    padding:12px 18px;
+    border-radius:30px;
     font-size:14px;
-    color:#00ff88;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+/* NOTIFICAÇÕES */
+.notification{
+    position:fixed;
+    bottom:20px;
+    left:20px;
+    background:#111;
+    padding:12px 20px;
+    font-size:13px;
+    border-left:2px solid #00ffcc;
     opacity:0.8;
 }
 </style>
@@ -106,53 +140,58 @@ button:hover{
 <body>
 
 <div class="top-bar">
-INFRAESTRUTURA NOFACE — CÓDIGO OCULTO ATIVADO
+ARQUITETURA NOFACE — CÓDIGO OCULTO
 </div>
 
 <div class="container">
 
 <h1>O Segredo</h1>
-<div class="sub">
-O guia definitivo pra você faturar pesado no orgânico.
+<div class="subtitle">
+Sistema fechado para quem opera no invisível.
 </div>
 
-<div class="box">
-<div class="warning">
-Essa condição desaparece quando o tempo zerar.
+<div class="tech-block">
+<h3>O QUE É A NOFACE?</h3>
+<p>Uma estrutura estratégica para gerar autoridade e lucro sem exposição. Você domina o sistema. Não o contrário.</p>
 </div>
 
-<div class="price-old">R$97,00</div>
-<div class="price-new">R$23,97</div>
-
-<div class="timer" id="timer">15:00</div>
+<div class="tech-block">
+<h3>ACESSO RESTRITO</h3>
+<p>Conteúdo direto, aplicável e cirúrgico. Sem teoria desnecessária. Apenas execução estratégica.</p>
 </div>
 
+<div class="tech-block">
+<h3>POSICIONAMENTO INVISÍVEL</h3>
+<p>Você constrói influência e vendas mantendo anonimato total. Poder silencioso.</p>
+</div>
+
+<div class="tech-block">
+<h3>ENTRADA IMEDIATA</h3>
+<p>Após ativação, o acesso é liberado instantaneamente. Sistema completo.</p>
+</div>
+
+<div class="cta">
 <button onclick="window.location.href='https://pay.kiwify.com.br/1hpTVDK'">
-QUERO AGORA
+ATIVAR ACESSO
 </button>
-
-<div class="discount">
-DESCONTO RELÂMPAGO — De R$97,00 por R$23,97
 </div>
 
+</div>
+
+<a class="whatsapp" href="https://wa.me/5542991229786" target="_blank">
+WhatsApp
+</a>
+
+<div class="notification" id="notify">
+Lucas adquiriu o Sistema NoFace.
 </div>
 
 <script>
-let time = 900;
-let timerElement = document.getElementById("timer");
-
-let countdown = setInterval(function(){
-    let minutes = Math.floor(time / 60);
-    let seconds = time % 60;
-    seconds = seconds < 10 ? "0" + seconds : seconds;
-    timerElement.innerHTML = minutes + ":" + seconds;
-    time--;
-
-    if(time < 0){
-        clearInterval(countdown);
-        timerElement.innerHTML = "Encerrado";
-    }
-},1000);
+let nomes = ["Pedro","André","Lucas","Matheus","Rafael","Bruno","Thiago","Caio","Felipe","Gabriel"];
+setInterval(()=>{
+    let nome = nomes[Math.floor(Math.random()*nomes.length)];
+    document.getElementById("notify").innerHTML = nome + " ativou o Sistema NoFace.";
+},5000);
 </script>
 
 </body>
