@@ -3,223 +3,177 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Infraestrutura NoFace</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<title>Infraestrutura NoFace — Código Oculto</title>
 
 <style>
 body{
     margin:0;
+    font-family: Arial, Helvetica, sans-serif;
     background:#000;
     color:#fff;
-    font-family:'Inter', sans-serif;
-    letter-spacing:0.3px;
 }
 
-.container{
-    max-width:1100px;
-    margin:0 auto;
-    padding:40px 20px;
-}
-
-.hero{
-    text-align:center;
-    padding:80px 20px 60px 20px;
-}
-
-.hero h1{
-    font-size:38px;
-    font-weight:800;
-    color:#00ff88;
-    margin-bottom:20px;
-}
-
-.hero p{
-    font-size:18px;
-    opacity:0.8;
-    max-width:700px;
-    margin:0 auto 40px auto;
-}
-
-.preco-box{
-    margin-top:20px;
-}
-
-.preco-antigo{
-    font-size:18px;
-    text-decoration:line-through;
-    opacity:0.6;
-}
-
-.preco-novo{
-    font-size:42px;
-    font-weight:800;
-    margin:10px 0;
-}
-
-.timer{
-    margin-top:15px;
-    font-size:14px;
-    opacity:0.7;
-}
-
-.botao-ativar{
-    display:inline-block;
-    margin-top:30px;
-    padding:16px 40px;
-    background:#00ff88;
-    color:#000;
-    font-weight:700;
-    text-decoration:none;
-    border-radius:4px;
-    transition:0.2s;
-}
-
-.botao-ativar:hover{
-    transform:translateY(-2px);
-}
-
-.section{
+section{
     padding:70px 20px;
-    background:#0a0a0a;
+    max-width:900px;
+    margin:auto;
 }
 
-.section h2{
+h1{
+    font-size:38px;
     text-align:center;
-    font-size:26px;
-    font-weight:800;
-    margin-bottom:40px;
-    letter-spacing:1px;
+    line-height:1.2;
 }
 
-.bloco{
-    max-width:800px;
-    margin:0 auto 50px auto;
-}
-
-.bloco h3{
-    font-size:18px;
+.neon{
     color:#00ff88;
-    margin-bottom:10px;
 }
 
-.bloco p{
-    opacity:0.85;
-    line-height:1.6;
+.sub{
+    text-align:center;
+    color:#b3b3b3;
+    margin-top:20px;
+    font-size:16px;
 }
 
 .divisor{
     height:1px;
-    background:rgba(0,255,140,0.15);
-    width:100%;
+    background:#111;
     margin:60px 0;
 }
 
-.garantia{
-    text-align:center;
-    padding:60px 20px;
+.card{
+    border:1px solid rgba(0,255,136,0.15);
+    padding:35px;
+    border-radius:14px;
+    margin-bottom:30px;
+    background:linear-gradient(180deg,#050505,#000);
 }
 
-.garantia h3{
-    font-size:20px;
-    margin-bottom:20px;
+.card h3{
+    color:#00ff88;
+    margin-bottom:15px;
 }
 
-.garantia p{
-    max-width:600px;
-    margin:0 auto;
-    opacity:0.8;
+.card p{
+    color:#cfcfcf;
     line-height:1.6;
 }
 
-.frase-final{
+.preco-antigo{
     text-align:center;
-    padding:60px 20px 80px 20px;
-    font-size:20px;
-    font-weight:600;
+    color:#777;
+    text-decoration:line-through;
+    font-size:18px;
+    margin-top:20px;
 }
 
-.footer{
+.preco{
     text-align:center;
-    padding:20px;
-    font-size:12px;
-    opacity:0.5;
+    font-size:46px;
+    font-weight:bold;
+    margin:10px 0;
+}
+
+.timer{
+    text-align:center;
+    color:#00ff88;
+    font-size:14px;
+    letter-spacing:2px;
+}
+
+.btn{
+    display:block;
+    margin:35px auto 0;
+    background:#00ff88;
+    color:#000;
+    padding:18px 30px;
+    border-radius:8px;
+    text-align:center;
+    font-weight:bold;
+    text-decoration:none;
+    width:250px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#00cc6e;
 }
 </style>
 </head>
 
 <body>
 
-<div class="hero container">
+<section>
 
-<h1>Infraestrutura NoFace — Código Oculto</h1>
+<h1>
+<span class="neon">Infraestrutura NoFace — Código Oculto</span>
+</h1>
 
-<p>
-Sistema estratégico para construção digital sem exposição.  
-Base estrutural para operação orgânica previsível.
+<p class="sub">
+Sistema estratégico para construir ativos digitais no orgânico sem exposição.  
+Base estrutural para operação previsível.
 </p>
 
-<div class="preco-box">
 <div class="preco-antigo">De R$97,00</div>
-<div class="preco-novo">Por R$23,97</div>
-<div class="timer">Liberação temporária</div>
-</div>
+<div class="preco">Por R$23,97</div>
+<div class="timer">LIBERAÇÃO TEMPORÁRIA</div>
 
-<a href="#" class="botao-ativar">ATIVAR ACESSO</a>
+<a href="#" class="btn">ATIVAR ACESSO</a>
 
-</div>
+<div class="divisor"></div>
 
-<div class="section">
+<h2 style="text-align:center;">O QUE VOCÊ VAI ACESSAR</h2>
 
-<h2>O QUE VOCÊ VAI ACESSAR</h2>
+<br>
 
-<div class="bloco">
-<h3>Bloco 01 — Fundamento Estrutural</h3>
+<div class="card">
+<h3>Bloco 01 — Fundamento Estratégico</h3>
 <p>
-Construção da base estratégica para operação digital orgânica.  
-Sem improviso. Sem dependência de sorte.
+Você aprende como estruturar sua base digital corretamente.
+Posicionamento, mentalidade estratégica e construção de autoridade invisível.
+Nada de improviso. Nada de depender de seguidores.
 </p>
 </div>
 
-<div class="bloco">
-<h3>Bloco 02 — Arquitetura Operacional</h3>
+<div class="card">
+<h3>Bloco 02 — Engenharia de Oferta e Conteúdo</h3>
 <p>
-Organização de conteúdo, posicionamento e ativação de audiência  
-de forma silenciosa e controlada.
+Aqui você entende como transformar conhecimento em uma oferta vendável.
+Copy estratégica, gatilhos aplicados com inteligência e estrutura de conversão orgânica.
+Não é postar por postar. É ativar desejo.
 </p>
 </div>
 
-<div class="bloco">
-<h3>Bloco 03 — Infraestrutura de Crescimento</h3>
+<div class="card">
+<h3>Bloco 03 — Sistema de Ativação e Escala</h3>
 <p>
-Modelo replicável para escalar com previsibilidade,  
-mantendo domínio e controle sobre a operação.
+Modelo replicável para crescer com controle.
+Como organizar conteúdo, gerar tráfego orgânico qualificado e transformar audiência em compradores.
+Previsibilidade acima de sorte.
 </p>
-</div>
-
 </div>
 
 <div class="divisor"></div>
 
-<div class="garantia">
+<h2 style="text-align:center;">O QUE É A NOFACE?</h2>
 
-<h3>Garantia de Ativação</h3>
-
+<div class="card">
 <p>
-Você terá 7 dias para acessar a Infraestrutura NoFace.  
-Se entender que não faz sentido para o seu momento,  
-basta solicitar cancelamento dentro do prazo.
+A NoFace não é um curso comum.
+É uma infraestrutura digital estruturada.
+Uma arquitetura invisível que permite construir ativos que vendem sem exposição pessoal.
+Você aprende a operar como sistema — não como influenciador.
 </p>
-
 </div>
 
-<div class="frase-final">
-Estrutura precede resultado.
-</div>
+<div class="preco-antigo">De R$97,00</div>
+<div class="preco">Por R$23,97</div>
+<div class="timer">OFERTA ENCERRA EM BREVE</div>
 
-<div class="footer">
-NoFaceEmpire © Operação Estratégica
-</div>
+<a href="#" class="btn">ACESSAR SISTEMA AGORA</a>
+
+</section>
 
 </body>
 </html>
