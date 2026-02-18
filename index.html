@@ -18,7 +18,7 @@ body{
     font-family:'Montserrat', sans-serif;
     background:#000;
     color:#fff;
-    background-image: radial-gradient(circle at center, rgba(0,230,118,0.06) 0%, transparent 70%);
+    background-image: radial-gradient(circle at center, rgba(0,230,118,0.07) 0%, transparent 70%);
 }
 
 .container{
@@ -31,78 +31,32 @@ body{
 
 .hero{
     text-align:center;
-    padding:100px 0 60px 0;
+    padding:120px 0 80px 0;
 }
 
 .mini-title{
     font-size:13px;
     letter-spacing:5px;
     color:#00e676;
-    margin-bottom:20px;
+    margin-bottom:25px;
 }
 
 h1{
-    font-size:40px; /* DIMINUÍDO */
+    font-size:48px; /* apenas levemente reduzido */
     font-weight:800;
     color:#00e676;
-    line-height:1.3;
-    text-shadow:0 0 25px rgba(0,230,118,0.25);
+    line-height:1.2;
+    text-shadow:0 0 30px rgba(0,230,118,0.25);
 }
 
 .subheadline{
-    margin-top:25px;
-    font-size:18px;
+    margin-top:30px;
+    font-size:19px;
     color:#cfcfcf;
     max-width:700px;
     margin-left:auto;
     margin-right:auto;
     line-height:1.6;
-}
-
-/* PRICE */
-
-.price-box{
-    margin-top:50px;
-}
-
-.old-price{
-    color:#777;
-    text-decoration:line-through;
-    font-size:18px;
-    margin-bottom:10px;
-}
-
-.new-price{
-    font-size:42px;
-    font-weight:800;
-    color:#00e676;
-    margin-bottom:25px;
-}
-
-/* BUTTON */
-
-.cta-btn{
-    padding:16px 50px;
-    font-size:16px;
-    font-weight:700;
-    border-radius:8px;
-    border:none;
-    background:#00e676;
-    color:#000;
-    cursor:pointer;
-    transition:0.3s;
-    animation:breath 2.5s infinite;
-}
-
-.cta-btn:hover{
-    transform:scale(1.05);
-    box-shadow:0 0 30px rgba(0,230,118,0.5);
-}
-
-@keyframes breath{
-    0%{box-shadow:0 0 0px rgba(0,230,118,0.4);}
-    50%{box-shadow:0 0 20px rgba(0,230,118,0.4);}
-    100%{box-shadow:0 0 0px rgba(0,230,118,0.4);}
 }
 
 .divider{
@@ -116,8 +70,8 @@ h1{
 
 .card{
     max-width:800px;
-    margin:0 auto 80px auto;
-    padding:60px 50px;
+    margin:0 auto 40px auto;
+    padding:50px 45px; /* levemente reduzido */
     border-radius:20px;
     background:rgba(0,20,10,0.6);
     border:1px solid rgba(0,230,118,0.25);
@@ -125,16 +79,66 @@ h1{
 }
 
 .card h2{
-    font-size:28px;
+    font-size:30px;
     color:#00e676;
-    margin-bottom:25px;
+    margin-bottom:20px;
 }
 
 .card p{
-    font-size:17px;
+    font-size:17px; /* levemente menor */
     color:#d6d6d6;
-    line-height:1.7;
-    margin-bottom:18px;
+    line-height:1.6;
+    margin-bottom:15px;
+}
+
+/* PRICE + CTA */
+
+.offer{
+    text-align:center;
+    margin-bottom:90px;
+}
+
+.old-price{
+    color:#666;
+    text-decoration:line-through;
+    font-size:18px;
+    margin-bottom:10px;
+}
+
+.new-price{
+    font-size:42px;
+    font-weight:800;
+    color:#00e676;
+    margin-bottom:10px;
+}
+
+.timer{
+    font-size:16px;
+    color:#aaa;
+    margin-bottom:25px;
+}
+
+.cta-btn{
+    padding:16px 60px;
+    font-size:15px;
+    font-weight:700;
+    border-radius:8px;
+    border:none;
+    background:#00e676;
+    color:#000;
+    cursor:pointer;
+    animation:breath 2.5s infinite;
+    transition:0.3s;
+}
+
+.cta-btn:hover{
+    transform:scale(1.05);
+}
+
+@keyframes breath{
+    0%{box-shadow:0 0 0px rgba(0,230,118,0.4);}
+    50%{box-shadow:0 0 20px rgba(0,230,118,0.4);}
+    100%{box-shadow:0 0 0px rgba(0,230,118,0.4);}
 }
 
 /* INSTITUTIONAL */
@@ -156,7 +160,7 @@ h1{
     margin:auto;
     color:#bfbfbf;
     line-height:1.7;
-    font-size:15px;
+    font-size:16px;
 }
 
 footer{
@@ -173,21 +177,16 @@ footer{
 <section class="hero">
     <div class="container">
 
-        <div class="mini-title">ARQUITETURA NOFACE — CÓDIGO OCULTO</div>
+        <div class="mini-title">ARQUITETURA DIGITAL ESTRATÉGICA</div>
 
         <h1>
-            Sistema estruturado para gerar vendas no orgânico sem exposição.
+            Construir renda no orgânico é uma questão de estrutura.
         </h1>
 
         <p class="subheadline">
-            Método direto. Execução previsível. Estrutura invisível.
+            Não é sobre seguidores. Não é sobre sorte.
+            É sobre entender o sistema que poucos dominam.
         </p>
-
-        <div class="price-box">
-            <div class="old-price">R$97,00</div>
-            <div class="new-price">R$23,97</div>
-            <button class="cta-btn">ATIVAR ACESSO</button>
-        </div>
 
     </div>
 </section>
@@ -197,25 +196,29 @@ footer{
 <section>
     <div class="card">
 
-        <h2>O que você recebe</h2>
+        <h2>O Código Oculto</h2>
 
         <p>
-            • Estrutura completa de posicionamento NoFace  
+            Guia estratégico para construir ativos digitais que vendem sem exposição.
         </p>
 
         <p>
-            • Arquitetura de páginas voltadas para conversão silenciosa  
-        </p>
-
-        <p>
-            • Estratégia de ativação orgânica sem depender de seguidores  
-        </p>
-
-        <p>
-            • Método organizado em ciclos de execução prática  
+            Posicionamento inteligente. Execução previsível.
         </p>
 
     </div>
+</section>
+
+<!-- PREÇO + BOTÃO APENAS AQUI EMBAIXO -->
+
+<section class="offer">
+
+    <div class="old-price">R$97,00</div>
+    <div class="new-price">R$23,97</div>
+    <div class="timer">Tempo restante: <span id="countdown">15:00</span></div>
+
+    <button class="cta-btn">ATIVAR ACESSO</button>
+
 </section>
 
 <section class="institutional">
@@ -224,9 +227,9 @@ footer{
         <h3>NOFACEEMPIRE</h3>
 
         <p>
-            Infraestrutura digital baseada em engenharia estratégica.
-            Sistema fechado para quem decide operar com controle,
-            discrição e domínio estrutural.
+            Infraestrutura digital orientada por engenharia estratégica.
+            Arquiteturas proprietárias voltadas à construção de ativos no orgânico.
+            Operação estruturada por ciclos com liberação controlada.
         </p>
 
     </div>
@@ -235,6 +238,26 @@ footer{
 <footer>
 © 2026 NOFACEEMPIRE
 </footer>
+
+<script>
+let time = 900; // 15 minutos
+
+function updateCountdown(){
+    let minutes = Math.floor(time / 60);
+    let seconds = time % 60;
+
+    seconds = seconds < 10 ? "0" + seconds : seconds;
+
+    document.getElementById("countdown").innerText = minutes + ":" + seconds;
+
+    if(time > 0){
+        time--;
+        setTimeout(updateCountdown, 1000);
+    }
+}
+
+updateCountdown();
+</script>
 
 </body>
 </html>
