@@ -42,7 +42,7 @@ body{
 }
 
 h1{
-    font-size:48px; /* apenas levemente reduzido */
+    font-size:48px;
     font-weight:800;
     color:#00e676;
     line-height:1.2;
@@ -71,7 +71,7 @@ h1{
 .card{
     max-width:800px;
     margin:0 auto 40px auto;
-    padding:50px 45px; /* levemente reduzido */
+    padding:50px 45px;
     border-radius:20px;
     background:rgba(0,20,10,0.6);
     border:1px solid rgba(0,230,118,0.25);
@@ -85,7 +85,7 @@ h1{
 }
 
 .card p{
-    font-size:17px; /* levemente menor */
+    font-size:17px;
     color:#d6d6d6;
     line-height:1.6;
     margin-bottom:15px;
@@ -193,24 +193,43 @@ footer{
 
 <div class="divider"></div>
 
+<!-- BLOCO 1 -->
 <section>
     <div class="card">
-
         <h2>O Código Oculto</h2>
-
-        <p>
-            Guia estratégico para construir ativos digitais que vendem sem exposição.
-        </p>
-
-        <p>
-            Posicionamento inteligente. Execução previsível.
-        </p>
-
+        <p>Guia estratégico para construir ativos digitais que vendem sem exposição.</p>
+        <p>Posicionamento inteligente. Execução previsível.</p>
     </div>
 </section>
 
-<!-- PREÇO + BOTÃO APENAS AQUI EMBAIXO -->
+<!-- BLOCO 2 -->
+<section>
+    <div class="card">
+        <h2>Posicionamento Invisível</h2>
+        <p>Estrutura para operar no orgânico sem depender de exposição pessoal.</p>
+        <p>Autoridade construída por engenharia estratégica.</p>
+    </div>
+</section>
 
+<!-- BLOCO 3 -->
+<section>
+    <div class="card">
+        <h2>Execução Estruturada</h2>
+        <p>Sistema organizado em ciclos claros de aplicação prática.</p>
+        <p>Cada etapa desenhada para gerar previsibilidade.</p>
+    </div>
+</section>
+
+<!-- BLOCO 4 -->
+<section>
+    <div class="card">
+        <h2>Infraestrutura NoFace</h2>
+        <p>Arquitetura digital voltada à criação de ativos que trabalham no automático.</p>
+        <p>Controle, discrição e domínio estrutural.</p>
+    </div>
+</section>
+
+<!-- OFERTA -->
 <section class="offer">
 
     <div class="old-price">R$97,00</div>
@@ -240,14 +259,12 @@ footer{
 </footer>
 
 <script>
-let time = 900; // 15 minutos
+let time = 900;
 
 function updateCountdown(){
     let minutes = Math.floor(time / 60);
     let seconds = time % 60;
-
     seconds = seconds < 10 ? "0" + seconds : seconds;
-
     document.getElementById("countdown").innerText = minutes + ":" + seconds;
 
     if(time > 0){
