@@ -3,233 +3,196 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Infraestrutura NoFace — Código Oculto</title>
+<title>Infraestrutura NoFace – Código Oculto</title>
 
 <style>
 body{
     margin:0;
+    padding:0;
     background:#000;
     font-family:Arial, Helvetica, sans-serif;
-    color:#fff;
-}
-
-section{
-    max-width:820px;
-    margin:auto;
-    padding:100px 25px;
-}
-
-.top-mini{
+    color:white;
     text-align:center;
+}
+
+/* TOPO */
+.top-bar{
+    background:#000;
+    padding:15px;
+    font-size:14px;
+    letter-spacing:1px;
     color:#00ff88;
-    letter-spacing:4px;
-    font-size:12px;
-    margin-bottom:25px;
+    border-bottom:1px solid #00ff88;
 }
 
 h1{
-    font-size:48px;
-    text-align:center;
-    line-height:1.2;
-    margin-bottom:25px;
-}
-
-.neon{
+    font-size:28px;
+    margin-top:40px;
     color:#00ff88;
+    text-transform:uppercase;
 }
 
 .sub{
-    text-align:center;
-    color:#9a9a9a;
-    max-width:650px;
-    margin:0 auto;
+    font-size:14px;
+    color:#aaa;
+    margin-bottom:30px;
+}
+
+/* TIMER */
+.timer-box{
+    margin:20px auto;
+    padding:15px;
+    width:220px;
+    border:1px solid #00ff88;
+    border-radius:8px;
+    font-size:18px;
+}
+
+#timer{
+    font-size:26px;
+    color:#00ff88;
+    font-weight:bold;
+}
+
+/* PREÇO */
+.price-box{
+    margin-top:20px;
+}
+
+.old-price{
+    text-decoration:line-through;
+    color:#777;
+    font-size:18px;
+}
+
+.new-price{
+    font-size:40px;
+    font-weight:bold;
+    color:#00ff88;
+    animation:pulse 1.5s infinite;
+}
+
+@keyframes pulse{
+    0%{opacity:1;}
+    50%{opacity:0.7;}
+    100%{opacity:1;}
+}
+
+/* BLOCOS */
+.blocks{
+    max-width:600px;
+    margin:40px auto;
+}
+
+.block{
+    border:1px solid #00ff88;
+    border-radius:10px;
+    padding:20px;
+    margin-bottom:20px;
+    text-align:left;
+}
+
+.block h3{
+    color:#00ff88;
+    margin-bottom:10px;
+}
+
+.block p{
+    color:#ccc;
+    font-size:14px;
     line-height:1.6;
 }
 
-.divisor{
-    height:1px;
-    width:120px;
-    background:#00ff88;
-    margin:70px auto;
-    opacity:0.3;
-}
-
-.card{
-    margin-top:80px;
-    padding:45px;
-    border-radius:18px;
-    border:1px solid rgba(0,255,136,0.35);
-    background:linear-gradient(145deg,#04140f,#000);
-    box-shadow:0 0 35px rgba(0,255,136,0.08);
-}
-
-.card h2{
-    color:#00ff88;
-    margin-bottom:25px;
-    font-size:28px;
-}
-
-.card p{
-    color:#b5b5b5;
-    line-height:1.8;
-    max-width:600px;
-}
-
-.lista{
-    text-align:center;
-    margin-top:60px;
-    color:#bfbfbf;
-    line-height:2.2;
-}
-
-.titulo-sec{
-    text-align:center;
-    font-size:28px;
-    margin-top:120px;
-    margin-bottom:60px;
-}
-
-.bloco{
-    border:1px solid rgba(0,255,136,0.25);
-    border-radius:16px;
-    padding:35px;
-    margin:25px 0;
-    background:#050505;
-}
-
-.bloco h3{
-    color:#00ff88;
-    margin-bottom:15px;
-}
-
-.bloco p{
-    color:#b5b5b5;
-    line-height:1.7;
-}
-
-.preco-area{
-    text-align:center;
-    margin-top:120px;
-}
-
-.preco-antigo{
-    text-decoration:line-through;
-    color:#666;
-    font-size:16px;
-}
-
-.preco{
-    font-size:50px;
-    font-weight:bold;
-    margin:15px 0;
-}
-
-.liberacao{
-    color:#00ff88;
-    letter-spacing:3px;
-    font-size:12px;
-}
-
-.botao{
+/* BOTÃO */
+.btn{
     display:inline-block;
-    margin-top:35px;
-    padding:18px 55px;
+    margin:40px 0;
+    padding:15px 40px;
     background:#00ff88;
     color:#000;
     font-weight:bold;
-    border-radius:12px;
     text-decoration:none;
+    border-radius:8px;
+    font-size:18px;
     transition:0.3s;
 }
 
-.botao:hover{
-    opacity:0.85;
+.btn:hover{
+    background:#00cc6a;
 }
 </style>
 </head>
 
 <body>
 
-<section>
-
-<div class="top-mini">
-ARQUITETURA DIGITAL ESTRATÉGICA
+<div class="top-bar">
+ACESSO LIBERADO • VAGA LIMITADA
 </div>
 
-<h1>
-Construir renda no orgânico é uma questão de <span class="neon">estrutura.</span>
-</h1>
+<h1>Infraestrutura NoFace<br>– Código Oculto</h1>
+<p class="sub">O sistema que constrói estrutura digital invisível e altamente lucrativa.</p>
 
-<p class="sub">
-Não é sobre seguidores. Não é sobre sorte.  
-É sobre entender o sistema que poucos dominam.
-</p>
+<div class="timer-box">
+Oferta encerra em:
+<div id="timer">15:00</div>
+</div>
 
-<div class="divisor"></div>
+<div class="price-box">
+<div class="old-price">De R$97</div>
+<div class="new-price">Por apenas R$23</div>
+</div>
 
-<div class="card">
-<h2>O Código Oculto</h2>
+<div class="blocks">
 
+<div class="block">
+<h3>Bloco 1 – Fundamento Estratégico</h3>
 <p>
-Um guia estruturado que revela como construir ativos digitais
-que vendem sem exposição.
+Você aprende a montar a base da sua estrutura NoFace do zero.
+Entendimento completo de posicionamento oculto, mentalidade dominante
+e construção silenciosa de autoridade digital.
 </p>
+</div>
 
+<div class="block">
+<h3>Bloco 2 – Arquitetura de Conversão</h3>
 <p>
-Estratégia aplicada. Posicionamento inteligente.
-Execução previsível.
+Aqui está o verdadeiro código.
+Você aprende como estruturar páginas, ofertas e gatilhos
+que fazem o visitante querer comprar sem precisar aparecer.
+Tudo organizado de forma estratégica e minimalista.
 </p>
 </div>
 
-<div class="lista">
-Fundamento Estratégico<br>
-Arquitetura de Posicionamento<br>
-Engenharia de Oferta<br>
-Ativação Estrutural
-</div>
-
-<div class="titulo-sec">
-O Que Você Vai Acessar
-</div>
-
-<div class="bloco">
-<h3>01 — Fundamento Estratégico</h3>
+<div class="block">
+<h3>Bloco 3 – Ativação e Escala</h3>
 <p>
-Base mental e estrutural para operar no orgânico com controle.
+Transforme estrutura em dinheiro.
+Método para ativar tráfego orgânico, escalar vendas e construir
+um sistema automático que trabalha por você.
+Sem exposição. Sem depender de seguidores.
 </p>
 </div>
 
-<div class="bloco">
-<h3>02 — Engenharia de Oferta</h3>
-<p>
-Criação de oferta vendável e copy estratégica sem dependência de audiência.
-</p>
 </div>
 
-<div class="bloco">
-<h3>03 — Sistema de Ativação</h3>
-<p>
-Modelo replicável para crescimento previsível e escalável.
-</p>
-</div>
-
-<div class="preco-area">
-
-<div class="titulo-sec">
-Infraestrutura NoFace — Código Oculto
-</div>
-
-<div class="preco-antigo">De R$97,00</div>
-<div class="preco">Por R$23,97</div>
-<div class="liberacao">LIBERAÇÃO TEMPORÁRIA</div>
-
-<a href="https://pay.kiwify.com.br/1hpTVDK" class="botao">
-ATIVAR ACESSO
+<a href="https://pay.kiwify.com.br/1hpTVDK" class="btn">
+QUERO ACESSAR AGORA
 </a>
 
-</div>
+<script>
+var time = 900;
+var timer = document.getElementById("timer");
 
-</section>
+setInterval(function(){
+    var minutes = Math.floor(time / 60);
+    var seconds = time % 60;
+    seconds = seconds < 10 ? "0" + seconds : seconds;
+    timer.innerHTML = minutes + ":" + seconds;
+    if(time > 0){
+        time--;
+    }
+},1000);
+</script>
 
 </body>
-</html>
+    </html>
