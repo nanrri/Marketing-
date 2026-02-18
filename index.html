@@ -1,124 +1,104 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Infraestrutura NoFace – Código Oculto</title>
+<title>O Segredo</title>
 
 <style>
 body{
     margin:0;
-    padding:0;
+    font-family:Arial, sans-serif;
     background:#000;
-    font-family:Arial, Helvetica, sans-serif;
-    color:white;
+    color:#fff;
     text-align:center;
+    overflow-x:hidden;
 }
 
-/* TOPO */
 .top-bar{
-    background:#000;
-    padding:15px;
-    font-size:14px;
-    letter-spacing:1px;
+    font-size:12px;
+    letter-spacing:2px;
+    padding:10px;
     color:#00ff88;
-    border-bottom:1px solid #00ff88;
+    opacity:0.7;
+}
+
+.container{
+    max-width:900px;
+    margin:auto;
+    padding:40px 20px;
 }
 
 h1{
-    font-size:28px;
-    margin-top:40px;
-    color:#00ff88;
-    text-transform:uppercase;
-}
-
-.sub{
-    font-size:14px;
-    color:#aaa;
-    margin-bottom:30px;
-}
-
-/* TIMER */
-.timer-box{
-    margin:20px auto;
-    padding:15px;
-    width:220px;
-    border:1px solid #00ff88;
-    border-radius:8px;
-    font-size:18px;
-}
-
-#timer{
-    font-size:26px;
-    color:#00ff88;
-    font-weight:bold;
-}
-
-/* PREÇO */
-.price-box{
-    margin-top:20px;
-}
-
-.old-price{
-    text-decoration:line-through;
-    color:#777;
-    font-size:18px;
-}
-
-.new-price{
-    font-size:40px;
-    font-weight:bold;
-    color:#00ff88;
-    animation:pulse 1.5s infinite;
-}
-
-@keyframes pulse{
-    0%{opacity:1;}
-    50%{opacity:0.7;}
-    100%{opacity:1;}
-}
-
-/* BLOCOS */
-.blocks{
-    max-width:600px;
-    margin:40px auto;
-}
-
-.block{
-    border:1px solid #00ff88;
-    border-radius:10px;
-    padding:20px;
-    margin-bottom:20px;
-    text-align:left;
-}
-
-.block h3{
-    color:#00ff88;
+    font-size:42px;
     margin-bottom:10px;
 }
 
-.block p{
-    color:#ccc;
-    font-size:14px;
-    line-height:1.6;
+.sub{
+    font-size:18px;
+    opacity:0.8;
+    margin-bottom:40px;
 }
 
-/* BOTÃO */
-.btn{
-    display:inline-block;
-    margin:40px 0;
-    padding:15px 40px;
-    background:#00ff88;
-    color:#000;
+.box{
+    border:1px solid rgba(0,255,136,0.3);
+    border-radius:14px;
+    padding:25px;
+    margin:20px 0;
+    box-shadow:0 0 15px rgba(0,255,136,0.1);
+}
+
+.price-old{
+    text-decoration:line-through;
+    opacity:0.5;
+    font-size:20px;
+}
+
+.price-new{
+    font-size:48px;
     font-weight:bold;
-    text-decoration:none;
-    border-radius:8px;
-    font-size:18px;
+    color:#00ff88;
+    animation:breathing 2.5s infinite ease-in-out;
+}
+
+@keyframes breathing{
+    0%{transform:scale(1);}
+    50%{transform:scale(1.05);}
+    100%{transform:scale(1);}
+}
+
+.timer{
+    font-size:22px;
+    margin-top:10px;
+    color:#00ff88;
+}
+
+.warning{
+    font-size:14px;
+    opacity:0.7;
+    margin-bottom:20px;
+}
+
+button{
+    background:#00ff88;
+    border:none;
+    padding:18px 40px;
+    font-size:20px;
+    font-weight:bold;
+    border-radius:10px;
+    cursor:pointer;
     transition:0.3s;
 }
 
-.btn:hover{
-    background:#00cc6a;
+button:hover{
+    transform:scale(1.05);
+}
+
+.discount{
+    margin-top:10px;
+    font-size:14px;
+    color:#00ff88;
+    opacity:0.8;
 }
 </style>
 </head>
@@ -126,73 +106,54 @@ h1{
 <body>
 
 <div class="top-bar">
-ACESSO LIBERADO • VAGA LIMITADA
+INFRAESTRUTURA NOFACE — CÓDIGO OCULTO ATIVADO
 </div>
 
-<h1>Infraestrutura NoFace<br>– Código Oculto</h1>
-<p class="sub">O sistema que constrói estrutura digital invisível e altamente lucrativa.</p>
+<div class="container">
 
-<div class="timer-box">
-Oferta encerra em:
-<div id="timer">15:00</div>
+<h1>O Segredo</h1>
+<div class="sub">
+O guia definitivo pra você faturar pesado no orgânico.
 </div>
 
-<div class="price-box">
-<div class="old-price">De R$97</div>
-<div class="new-price">Por apenas R$23</div>
+<div class="box">
+<div class="warning">
+Essa condição desaparece quando o tempo zerar.
 </div>
 
-<div class="blocks">
+<div class="price-old">R$97,00</div>
+<div class="price-new">R$23,97</div>
 
-<div class="block">
-<h3>Bloco 1 – Fundamento Estratégico</h3>
-<p>
-Você aprende a montar a base da sua estrutura NoFace do zero.
-Entendimento completo de posicionamento oculto, mentalidade dominante
-e construção silenciosa de autoridade digital.
-</p>
+<div class="timer" id="timer">15:00</div>
 </div>
 
-<div class="block">
-<h3>Bloco 2 – Arquitetura de Conversão</h3>
-<p>
-Aqui está o verdadeiro código.
-Você aprende como estruturar páginas, ofertas e gatilhos
-que fazem o visitante querer comprar sem precisar aparecer.
-Tudo organizado de forma estratégica e minimalista.
-</p>
-</div>
+<button onclick="window.location.href='https://pay.kiwify.com.br/1hpTVDK'">
+QUERO AGORA
+</button>
 
-<div class="block">
-<h3>Bloco 3 – Ativação e Escala</h3>
-<p>
-Transforme estrutura em dinheiro.
-Método para ativar tráfego orgânico, escalar vendas e construir
-um sistema automático que trabalha por você.
-Sem exposição. Sem depender de seguidores.
-</p>
+<div class="discount">
+DESCONTO RELÂMPAGO — De R$97,00 por R$23,97
 </div>
 
 </div>
-
-<a href="https://pay.kiwify.com.br/1hpTVDK" class="btn">
-QUERO ACESSAR AGORA
-</a>
 
 <script>
-var time = 900;
-var timer = document.getElementById("timer");
+let time = 900;
+let timerElement = document.getElementById("timer");
 
-setInterval(function(){
-    var minutes = Math.floor(time / 60);
-    var seconds = time % 60;
+let countdown = setInterval(function(){
+    let minutes = Math.floor(time / 60);
+    let seconds = time % 60;
     seconds = seconds < 10 ? "0" + seconds : seconds;
-    timer.innerHTML = minutes + ":" + seconds;
-    if(time > 0){
-        time--;
+    timerElement.innerHTML = minutes + ":" + seconds;
+    time--;
+
+    if(time < 0){
+        clearInterval(countdown);
+        timerElement.innerHTML = "Encerrado";
     }
 },1000);
 </script>
 
 </body>
-    </html>
+</html>
